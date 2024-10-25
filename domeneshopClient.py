@@ -1,5 +1,6 @@
 import json
 import base64
+import os
 import requests
 from dotenv import load_dotenv
 
@@ -85,7 +86,6 @@ class DomeneshopClient:
         """
         url = f"{self.base_url}/domains/{domain_id}/dns"
         response = requests.get(url, headers=self.headers)
-        self._print_debug_info(response)
         
         if response.status_code == 200:
             try:
@@ -187,3 +187,55 @@ class DomeneshopClient:
                           f"TTL: {record.get('ttl', 'N/A')}")
             return dns_records
         return None
+    
+    def get_domain_list(self):
+        """
+        Fetches a list of all domains and their DNS records from the API.
+
+        :return: A list of dictionaries containing domain and DNS record information.
+        """
+        domain_list = []
+        
+        domains = self.get_domains()
+        if not domains:
+            print("No domains retrieved.")
+            return domain_list  # Return empty list if no domains
+        
+        print("API call successful. Here is the domain information:")
+        for domain in domains:
+            domain_name = domain.get('domain')
+            domain_id = domain.get('id')
+            print(f"Domain: {domain_name} (ID: {domain_id})")
+            
+            dns_records = self.get_dns_records(domain_id)
+            dns_list = []
+            if dns_records:
+                for record in dns_records:
+                    dns_entry = {
+                        'host': record.get('host'),
+                        'type': record.get('type'),
+                        'data': record.get('data'),
+                        'ttl': record.get('ttl')
+                    }
+                    dns_list.append(dns_entry)
+            else:
+                print(f"No DNS records found for domain ID {domain_id}.")
+            
+            domain_info = {
+                'domain': domain_name,
+                'id': domain_id,
+                'dns_records': dns_list
+            }
+            domain_list.append(domain_info)
+        
+        return domain_list
+    
+def main():
+    # Load API credentials from environment variables
+    token = os.getenv("TOKEN")
+    secret = os.getenv("SECRET")
+    client = DomeneshopClient(token, secret)
+    client.get_domain_list()
+    
+if __name__ == "__main__":
+    main()
