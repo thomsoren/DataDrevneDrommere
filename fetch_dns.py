@@ -1,4 +1,5 @@
-from flask import Flask, render_template, flash
+from flask import Flask, render_template, flash, jsonify
+import json
 import os
 from domeneshop import Client
 from dotenv import load_dotenv
@@ -48,6 +49,16 @@ def hello_world():
     
     # Render the HTML template with forwards data
     return render_template('index.html', domains = filtered_domains)
+
+# Last inn JSON-dataene når applikasjonen starter
+with open('data/synthetic_data.json') as f:
+    data = json.load(f)
+
+
+@app.route('/data')
+def get_data():
+    return jsonify(data)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
