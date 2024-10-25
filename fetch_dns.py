@@ -4,11 +4,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    # query i dns 
+    # 1: query i dns , list forward
+    
+    # 2: hvilke entries har vi
 
-    # hvilke entries har vi
+    # 3: display i html
 
-    # display i html
     return render_template('index.html')
 
 
