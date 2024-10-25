@@ -4,8 +4,6 @@ import os
 import requests
 from dotenv import load_dotenv
 
-load_dotenv()
-
 class PiDomainHandler:
     """
     A client for interacting with the Domeneshop API to manage domains and DNS records.
@@ -232,9 +230,11 @@ class PiDomainHandler:
     
 def main():
     # Load API credentials from environment variables
+    load_dotenv("config/.env")
     token = os.getenv("TOKEN")
     secret = os.getenv("SECRET")
     client = PiDomainHandler(token, secret)
+    client.get_domain_list()
         
 if __name__ == "__main__":
     main()
