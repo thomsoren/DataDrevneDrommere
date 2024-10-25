@@ -1,11 +1,9 @@
-from flask import Flask, render_template, abort, flash
+from flask import Flask, render_template, flash
 import os
 from domeneshop import Client
 from dotenv import load_dotenv
-import requests
 import base64
-import json
-from DNS_mapper import get_domain_list
+from PiDomainHandler import PiDomainHandler
 
 load_dotenv()
 
@@ -14,6 +12,8 @@ app = Flask(__name__)
 # Retrieve the API token and secret from environment variables
 TOKEN = os.getenv('TOKEN') 
 SECRET = os.getenv('SECRET')
+
+handler = PiDomainHandler(TOKEN, SECRET)
 
 if not TOKEN: raise ValueError("No Domeneshop API key found. Please set the DOMENESHOP_API_KEY environment variable.")
 if not SECRET:
@@ -33,7 +33,7 @@ headers = {
 
 @app.route("/")
 def hello_world():
-    domains = get_domain_list(API_BASE_URL, headers)
+    domains = handler.get_domain_list()
     
     if not domains:
         message = "No domains found."
