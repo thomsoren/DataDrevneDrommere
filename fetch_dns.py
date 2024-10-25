@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import base64
 from PiDomainHandler import PiDomainHandler
 
-load_dotenv()
+load_dotenv("config/.env")
 
 app = Flask(__name__)
 
