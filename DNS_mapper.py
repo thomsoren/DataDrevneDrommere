@@ -2,7 +2,6 @@ import requests
 import json
 import base64
 import os
-import sys
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -157,14 +156,14 @@ def test_api():
 if __name__ == "__main__":
     
     # Legg til en ny DNS-oppføring (A-oppføring for rpi1)
-    domain_ID = "codexenmo.no"
+    domain_ID = "codexenmo.online"
     host = "gruppe4"  # Subdomene, f.eks. rpi1.codexenmo.no
     record_type = "A"  # Type DNS-oppføring
     data = "89.8.252.10"  # IP-adressen du vil peke til
     ttl = 3600  # Valgfritt, standard er 3600 sekunder
     
-    # add_dns_record(domain_ID, host, record_type, data, ttl)
-    get_dns_records(2089158)
-    delete_dns_record(2089158, 6714538)
-    get_dns_records(2089158)
+    add_dns_record(domain_ID, host, record_type, data, ttl)
+    # get_dns_records(2089158)
+    # delete_dns_record(2089158, 6714536)
+    # get_dns_records(2089158)
     test_api()
