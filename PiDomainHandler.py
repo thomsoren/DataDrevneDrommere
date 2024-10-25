@@ -6,14 +6,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class DomeneshopClient:
+class PiDomainHandler:
     """
     A client for interacting with the Domeneshop API to manage domains and DNS records.
     """
     
     def __init__(self, token, secret, domain_name="codexenmo.online", record_type="A", base_url="https://api.domeneshop.no/v0"):
         """
-        Initialize the DomeneshopClient.
+        Initialize the PiDomainHandler.
 
         :param token: API token for authentication.
         :param secret: API secret for authentication.
@@ -234,8 +234,7 @@ def main():
     # Load API credentials from environment variables
     token = os.getenv("TOKEN")
     secret = os.getenv("SECRET")
-    client = DomeneshopClient(token, secret)
-    client.get_domain_list()
-    
+    client = PiDomainHandler(token, secret)
+        
 if __name__ == "__main__":
     main()
