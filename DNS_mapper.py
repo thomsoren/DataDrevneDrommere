@@ -3,10 +3,17 @@ import json
 import base64
 import os
 import sys
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Dine API-krav
 TOKEN = os.getenv("TOKEN")
 SECRET = os.getenv("SECRET")
+
+print(TOKEN)
+print(SECRET)
+
 API_BASE_URL = "https://api.domeneshop.no/v0"
 
 # Opprett Basic Auth header
@@ -35,6 +42,25 @@ def get_domains():
             return None
     else:
         print(f"Feil ved henting av domener")
+        return None
+
+def get_dns_records(domain_id):
+    # URL for fetching DNS records for a specific domain
+    dns_url = f"{API_BASE_URL}/domains/{domain_id}/dns"
+    response = requests.get(dns_url, headers=headers)
+    
+    if response.status_code == 200:
+        try:
+            dns_records = response.json()
+            print(f"DNS oppføringer for domene ID {domain_id}:")
+            for record in dns_records:
+                print(f"Record ID: {record['id']}, Host: {record['host']}, Type: {record['type']}, Data: {record['data']}, TTL: {record['ttl']}")
+            return dns_records
+        except json.JSONDecodeError:
+            print("Feil: Responsen er ikke gyldig JSON.")
+            return None
+    else:
+        print(f"Feil ved henting av DNS-oppføringer: {response.status_code} - {response.text}")
         return None
 
 
@@ -118,7 +144,7 @@ def test_api():
                 dns_data = dns_response.json()
                 print(f"\nDNS oppføringer for domene ID {domain_id}:")
                 for record in dns_data: # Her thomas kan du hente ut dataen du trenger
-                    print(f"Host: {record['host']}, Type: {record['type']}, Data: {record['data']}, TTL: {record['ttl']}")
+                    print(f"Record id: {record['id']} Host: {record['host']}, Type: {record['type']}, Data: {record['data']}, TTL: {record['ttl']}")
             else:
                 print(f"Feil ved henting av DNS-oppføringer: {dns_response.status_code} - {dns_response.text}")
         
@@ -137,5 +163,8 @@ if __name__ == "__main__":
     data = "89.8.252.10"  # IP-adressen du vil peke til
     ttl = 3600  # Valgfritt, standard er 3600 sekunder
     
-    add_dns_record(domain_ID, host, record_type, data, ttl)
+    # add_dns_record(domain_ID, host, record_type, data, ttl)
+    get_dns_records(2089158)
+    delete_dns_record(2089158, 6714538)
+    get_dns_records(2089158)
     test_api()
