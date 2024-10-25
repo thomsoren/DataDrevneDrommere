@@ -5,7 +5,8 @@ import os
 import sys
 
 # Dine API-krav
-
+TOKEN = os.getenv("TOKEN")
+SECRET = os.getenv("SECRET")
 API_BASE_URL = "https://api.domeneshop.no/v0"
 
 # Opprett Basic Auth header
@@ -47,6 +48,7 @@ def find_domain_id(domain_name):
     return None
 
 def add_dns_record(domain_id, host, record_type, data, ttl=3600):
+    domain_id = find_domain_id(domain_id)
     url = f"{API_BASE_URL}/domains/{domain_id}/dns"
     payload = {
         "host": host,
@@ -54,7 +56,8 @@ def add_dns_record(domain_id, host, record_type, data, ttl=3600):
         "type": record_type,
         "data": data
     }
-    response = requests.post(url, headers=headers, data=json.dumps(payload))
+    response = requests.post(url, headers=headers, json=payload)
+    print(response.status_code)
     if response.status_code == 201:
         print(f"DNS-oppføring lagt til: {host}.{domain_id}")
         return response.json()
@@ -96,7 +99,7 @@ def list_dns_records(domain_id):
         return None
 
 def test_api():
-    
+    # Fetch list of domains
     url = f"{API_BASE_URL}/domains"
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
@@ -104,19 +107,34 @@ def test_api():
             data = response.json()
             print("API-kall vellykket. Her er domeneinformasjonen:")
             for domain in data:
-                print(domain["domain"])
+                print(f"Domene: {domain['domain']} (ID: {domain['id']})")
+            
+            # Fetch DNS records for a specific domain (in this case, domain_id 2089158)
+            domain_id = 2089158  # Replace with the desired domain ID
+            dns_url = f"{API_BASE_URL}/domains/{domain_id}/dns"
+            dns_response = requests.get(dns_url, headers=headers)
+
+            if dns_response.status_code == 200:
+                dns_data = dns_response.json()
+                print(f"\nDNS oppføringer for domene ID {domain_id}:")
+                for record in dns_data: # Her thomas kan du hente ut dataen du trenger
+                    print(f"Host: {record['host']}, Type: {record['type']}, Data: {record['data']}, TTL: {record['ttl']}")
+            else:
+                print(f"Feil ved henting av DNS-oppføringer: {dns_response.status_code} - {dns_response.text}")
+        
         except json.JSONDecodeError:
             print("Feil: Responsen er ikke gyldig JSON.")
     else:
         print(f"Feil ved API-kall: {response.status_code} - {response.text}")
 
+
 if __name__ == "__main__":
     
     # Legg til en ny DNS-oppføring (A-oppføring for rpi1)
     domain_ID = "codexenmo.no"
-    host = "rpi1"  # Subdomene, f.eks. rpi1.codexenmo.no
+    host = "gruppe4"  # Subdomene, f.eks. rpi1.codexenmo.no
     record_type = "A"  # Type DNS-oppføring
-    data = "192.168.0.1"  # IP-adressen du vil peke til
+    data = "89.8.252.10"  # IP-adressen du vil peke til
     ttl = 3600  # Valgfritt, standard er 3600 sekunder
     
     add_dns_record(domain_ID, host, record_type, data, ttl)
