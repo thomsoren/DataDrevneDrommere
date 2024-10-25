@@ -1,0 +1,24 @@
+{
+    "raspberryPiId": "RPi001",
+    "batterySize_kWh": 10,
+    "maxBatteryPower_kW": 5,
+    "solarPanelSize_peak_kW": 3,
+    "averageConsumption_kWh": 2,
+    "location": {
+      "latitude": 60.4720,
+      "longitude": 8.4689,
+      "region": "Oslo"
+    },
+    "networkTariffs": {
+      "peak": 0.20,
+      "offPeak": 0.10
+    },
+    "solarPanelDirection": "Sør",
+    "consumptionPattern": "Bolig",
+    "weather": {
+      "temperature": 15,
+      "humidity": 70,
+      "weatherCondition": "Skyet"
+    },
+    "timestamp": "2024-04-27T10:00:00Z"
+  }

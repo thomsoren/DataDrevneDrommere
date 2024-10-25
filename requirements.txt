@@ -1,0 +1,3 @@
+domeneshop==0.4.4
+requests
+python-dotenv
