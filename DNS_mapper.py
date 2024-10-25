@@ -152,7 +152,66 @@ def test_api():
     else:
         print(f"Feil ved API-kall: {response.status_code} - {response.text}")
 
+def get_domain_list(api_base_url, headers):
+    """
+    Fetches a list of all domains and their DNS records from the API.
 
+    Args:
+        api_base_url (str): The base URL of the API.
+        headers (Dict[str, str]): The headers to include in the API requests.
+
+    Returns:
+        List[Dict[str, Any]]: A list of dictionaries containing domain and DNS record information.
+    """
+    domain_list = []
+    
+    # Fetch list of domains
+    domains_url = f"{api_base_url}/domains"
+    try:
+        response = requests.get(domains_url, headers=headers)
+        response.raise_for_status()
+    except requests.RequestException as e:
+        print(f"Error fetching domains: {e}")
+        return domain_list  # Return empty list on failure
+    
+    try:
+        domains = response.json()
+        print("API call successful. Here is the domain information:")
+        for domain in domains:
+            print(f"Domain: {domain.get('domain')} (ID: {domain.get('id')})")
+            
+            # Fetch DNS records for the current domain
+            dns_url = f"{api_base_url}/domains/{domain.get('id')}/dns"
+            try:
+                dns_response = requests.get(dns_url, headers=headers)
+                dns_response.raise_for_status()
+                dns_records = dns_response.json()
+                dns_list = []
+                for record in dns_records:
+                    dns_entry = {
+                        'host': record.get('host'),
+                        'type': record.get('type'),
+                        'data': record.get('data'),
+                        'ttl': record.get('ttl')
+                    }
+                    dns_list.append(dns_entry)
+                domain_info = {
+                    'domain': domain.get('domain'),
+                    'id': domain.get('id'),
+                    'dns_records': dns_list
+                }
+                domain_list.append(domain_info)
+            except requests.RequestException as dns_err:
+                print(f"Error fetching DNS records for domain ID {domain.get('id')}: {dns_err}")
+            except json.JSONDecodeError:
+                print(f"Error: DNS response for domain ID {domain.get('id')} is not valid JSON.")
+    
+        return domain_list
+    
+    except json.JSONDecodeError:
+        print("Error: Domains response is not valid JSON.")
+        return domain_list  # Return empty list on failure
+    
 if __name__ == "__main__":
     
     # Legg til en ny DNS-oppføring (A-oppføring for rpi1)

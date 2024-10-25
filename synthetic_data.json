@@ -1,0 +1,2402 @@
+[
+    {
+        "raspberryPiId": "RPi000",
+        "batterySize_kWh": 10.45,
+        "maxBatteryPower_kW": 8.89,
+        "solarPanelSize_peak_kW": 2.33,
+        "averageConsumption_kWh": 1.64,
+        "location": {
+            "latitude": -87.3729275,
+            "longitude": -160.769469,
+            "region": "Kristaview"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.05
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 2,
+            "humidity": 65,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.516873Z"
+    },
+    {
+        "raspberryPiId": "RPi001",
+        "batterySize_kWh": 10.42,
+        "maxBatteryPower_kW": 3.1,
+        "solarPanelSize_peak_kW": 1.04,
+        "averageConsumption_kWh": 3.88,
+        "location": {
+            "latitude": 9.394431,
+            "longitude": 42.680405,
+            "region": "Justinstad"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 6,
+            "humidity": 35,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517124Z"
+    },
+    {
+        "raspberryPiId": "RPi002",
+        "batterySize_kWh": 8.84,
+        "maxBatteryPower_kW": 5.82,
+        "solarPanelSize_peak_kW": 4.34,
+        "averageConsumption_kWh": 2.43,
+        "location": {
+            "latitude": 0.674313,
+            "longitude": 99.394839,
+            "region": "Lake Daniel"
+        },
+        "networkTariffs": {
+            "peak": 0.25,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 27,
+            "humidity": 30,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.517173Z"
+    },
+    {
+        "raspberryPiId": "RPi003",
+        "batterySize_kWh": 10.83,
+        "maxBatteryPower_kW": 5.51,
+        "solarPanelSize_peak_kW": 2.61,
+        "averageConsumption_kWh": 4.79,
+        "location": {
+            "latitude": -3.3135985,
+            "longitude": 87.015993,
+            "region": "Nicolehaven"
+        },
+        "networkTariffs": {
+            "peak": 0.24,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 35,
+            "humidity": 34,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517217Z"
+    },
+    {
+        "raspberryPiId": "RPi004",
+        "batterySize_kWh": 13.07,
+        "maxBatteryPower_kW": 4.15,
+        "solarPanelSize_peak_kW": 1.14,
+        "averageConsumption_kWh": 2.08,
+        "location": {
+            "latitude": 10.4195095,
+            "longitude": -152.255948,
+            "region": "North Matthew"
+        },
+        "networkTariffs": {
+            "peak": 0.24,
+            "offPeak": 0.05
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 21,
+            "humidity": 30,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517260Z"
+    },
+    {
+        "raspberryPiId": "RPi005",
+        "batterySize_kWh": 18.4,
+        "maxBatteryPower_kW": 3.31,
+        "solarPanelSize_peak_kW": 3.99,
+        "averageConsumption_kWh": 2.65,
+        "location": {
+            "latitude": -7.765133,
+            "longitude": 78.268582,
+            "region": "Gonzalesburgh"
+        },
+        "networkTariffs": {
+            "peak": 0.24,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 9,
+            "humidity": 68,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.517334Z"
+    },
+    {
+        "raspberryPiId": "RPi006",
+        "batterySize_kWh": 12.72,
+        "maxBatteryPower_kW": 3.07,
+        "solarPanelSize_peak_kW": 4.66,
+        "averageConsumption_kWh": 3.02,
+        "location": {
+            "latitude": -6.7696415,
+            "longitude": 72.700702,
+            "region": "New Matthew"
+        },
+        "networkTariffs": {
+            "peak": 0.23,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 21,
+            "humidity": 60,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.517373Z"
+    },
+    {
+        "raspberryPiId": "RPi007",
+        "batterySize_kWh": 11.64,
+        "maxBatteryPower_kW": 3.77,
+        "solarPanelSize_peak_kW": 4.12,
+        "averageConsumption_kWh": 2.1,
+        "location": {
+            "latitude": 41.279278,
+            "longitude": -49.991302,
+            "region": "East Hannah"
+        },
+        "networkTariffs": {
+            "peak": 0.15,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 35,
+            "humidity": 35,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.517410Z"
+    },
+    {
+        "raspberryPiId": "RPi008",
+        "batterySize_kWh": 14.36,
+        "maxBatteryPower_kW": 2.3,
+        "solarPanelSize_peak_kW": 3.6,
+        "averageConsumption_kWh": 1.24,
+        "location": {
+            "latitude": 24.9468925,
+            "longitude": 37.752498,
+            "region": "Fordchester"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.05
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 8,
+            "humidity": 76,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517460Z"
+    },
+    {
+        "raspberryPiId": "RPi009",
+        "batterySize_kWh": 15.86,
+        "maxBatteryPower_kW": 6.75,
+        "solarPanelSize_peak_kW": 4.3,
+        "averageConsumption_kWh": 2.58,
+        "location": {
+            "latitude": -36.2791435,
+            "longitude": 144.285033,
+            "region": "Martinville"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 1,
+            "humidity": 82,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.517509Z"
+    },
+    {
+        "raspberryPiId": "RPi010",
+        "batterySize_kWh": 14.49,
+        "maxBatteryPower_kW": 1.8,
+        "solarPanelSize_peak_kW": 2.65,
+        "averageConsumption_kWh": 4.02,
+        "location": {
+            "latitude": 22.131537,
+            "longitude": -41.575881,
+            "region": "Lake Connor"
+        },
+        "networkTariffs": {
+            "peak": 0.28,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 13,
+            "humidity": 81,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.517545Z"
+    },
+    {
+        "raspberryPiId": "RPi011",
+        "batterySize_kWh": 13.17,
+        "maxBatteryPower_kW": 4.51,
+        "solarPanelSize_peak_kW": 3.03,
+        "averageConsumption_kWh": 1.65,
+        "location": {
+            "latitude": -17.770847,
+            "longitude": -136.972379,
+            "region": "Lake Caitlinburgh"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 30,
+            "humidity": 64,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.517584Z"
+    },
+    {
+        "raspberryPiId": "RPi012",
+        "batterySize_kWh": 7.9,
+        "maxBatteryPower_kW": 9.96,
+        "solarPanelSize_peak_kW": 2.2,
+        "averageConsumption_kWh": 3.16,
+        "location": {
+            "latitude": 3.416879,
+            "longitude": 54.191707,
+            "region": "North Richard"
+        },
+        "networkTariffs": {
+            "peak": 0.28,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 19,
+            "humidity": 46,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517621Z"
+    },
+    {
+        "raspberryPiId": "RPi013",
+        "batterySize_kWh": 7.01,
+        "maxBatteryPower_kW": 3.49,
+        "solarPanelSize_peak_kW": 2.78,
+        "averageConsumption_kWh": 4.65,
+        "location": {
+            "latitude": -55.081292,
+            "longitude": -160.872498,
+            "region": "Port Brittneyfurt"
+        },
+        "networkTariffs": {
+            "peak": 0.25,
+            "offPeak": 0.05
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 4,
+            "humidity": 45,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517659Z"
+    },
+    {
+        "raspberryPiId": "RPi014",
+        "batterySize_kWh": 6.19,
+        "maxBatteryPower_kW": 6.08,
+        "solarPanelSize_peak_kW": 1.76,
+        "averageConsumption_kWh": 1.98,
+        "location": {
+            "latitude": -57.8017605,
+            "longitude": 57.103429,
+            "region": "South Amanda"
+        },
+        "networkTariffs": {
+            "peak": 0.17,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 13,
+            "humidity": 87,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.517696Z"
+    },
+    {
+        "raspberryPiId": "RPi015",
+        "batterySize_kWh": 18.48,
+        "maxBatteryPower_kW": 8.14,
+        "solarPanelSize_peak_kW": 1.82,
+        "averageConsumption_kWh": 1.8,
+        "location": {
+            "latitude": 55.841173,
+            "longitude": 4.455364,
+            "region": "Montgomeryland"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": -8,
+            "humidity": 77,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517745Z"
+    },
+    {
+        "raspberryPiId": "RPi016",
+        "batterySize_kWh": 16.39,
+        "maxBatteryPower_kW": 7.72,
+        "solarPanelSize_peak_kW": 2.31,
+        "averageConsumption_kWh": 3.4,
+        "location": {
+            "latitude": -68.2075115,
+            "longitude": 45.370887,
+            "region": "Brandytown"
+        },
+        "networkTariffs": {
+            "peak": 0.28,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": -4,
+            "humidity": 44,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.517781Z"
+    },
+    {
+        "raspberryPiId": "RPi017",
+        "batterySize_kWh": 14.82,
+        "maxBatteryPower_kW": 1.32,
+        "solarPanelSize_peak_kW": 4.74,
+        "averageConsumption_kWh": 4.1,
+        "location": {
+            "latitude": 10.08362,
+            "longitude": 65.432416,
+            "region": "New Kevin"
+        },
+        "networkTariffs": {
+            "peak": 0.28,
+            "offPeak": 0.05
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 23,
+            "humidity": 51,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.517821Z"
+    },
+    {
+        "raspberryPiId": "RPi018",
+        "batterySize_kWh": 16.51,
+        "maxBatteryPower_kW": 6.7,
+        "solarPanelSize_peak_kW": 1.57,
+        "averageConsumption_kWh": 4.64,
+        "location": {
+            "latitude": 48.2560215,
+            "longitude": -178.765396,
+            "region": "Acevedoview"
+        },
+        "networkTariffs": {
+            "peak": 0.24,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 32,
+            "humidity": 81,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517874Z"
+    },
+    {
+        "raspberryPiId": "RPi019",
+        "batterySize_kWh": 14.34,
+        "maxBatteryPower_kW": 4.96,
+        "solarPanelSize_peak_kW": 1.59,
+        "averageConsumption_kWh": 3.74,
+        "location": {
+            "latitude": -7.7415155,
+            "longitude": -12.321919,
+            "region": "Luisview"
+        },
+        "networkTariffs": {
+            "peak": 0.17,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 21,
+            "humidity": 66,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.517910Z"
+    },
+    {
+        "raspberryPiId": "RPi020",
+        "batterySize_kWh": 13.58,
+        "maxBatteryPower_kW": 5.48,
+        "solarPanelSize_peak_kW": 3.73,
+        "averageConsumption_kWh": 2.6,
+        "location": {
+            "latitude": 53.1223015,
+            "longitude": 52.472121,
+            "region": "East Cheryl"
+        },
+        "networkTariffs": {
+            "peak": 0.27,
+            "offPeak": 0.1
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 24,
+            "humidity": 60,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.517947Z"
+    },
+    {
+        "raspberryPiId": "RPi021",
+        "batterySize_kWh": 13.07,
+        "maxBatteryPower_kW": 1.73,
+        "solarPanelSize_peak_kW": 2.63,
+        "averageConsumption_kWh": 3.9,
+        "location": {
+            "latitude": -69.5498355,
+            "longitude": 16.942065,
+            "region": "New Debra"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 7,
+            "humidity": 60,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.517983Z"
+    },
+    {
+        "raspberryPiId": "RPi022",
+        "batterySize_kWh": 8.38,
+        "maxBatteryPower_kW": 1.31,
+        "solarPanelSize_peak_kW": 4.8,
+        "averageConsumption_kWh": 4.44,
+        "location": {
+            "latitude": -22.249247,
+            "longitude": -3.464991,
+            "region": "South Sean"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 32,
+            "humidity": 70,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.518019Z"
+    },
+    {
+        "raspberryPiId": "RPi023",
+        "batterySize_kWh": 9.86,
+        "maxBatteryPower_kW": 3.68,
+        "solarPanelSize_peak_kW": 4.63,
+        "averageConsumption_kWh": 4.8,
+        "location": {
+            "latitude": 33.187988,
+            "longitude": -124.18712,
+            "region": "Ryanside"
+        },
+        "networkTariffs": {
+            "peak": 0.27,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": -5,
+            "humidity": 30,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.518055Z"
+    },
+    {
+        "raspberryPiId": "RPi024",
+        "batterySize_kWh": 13.72,
+        "maxBatteryPower_kW": 6.02,
+        "solarPanelSize_peak_kW": 1.53,
+        "averageConsumption_kWh": 1.73,
+        "location": {
+            "latitude": 49.196945,
+            "longitude": -104.464845,
+            "region": "Harrisville"
+        },
+        "networkTariffs": {
+            "peak": 0.17,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 2,
+            "humidity": 51,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518103Z"
+    },
+    {
+        "raspberryPiId": "RPi025",
+        "batterySize_kWh": 11.94,
+        "maxBatteryPower_kW": 9.57,
+        "solarPanelSize_peak_kW": 4.33,
+        "averageConsumption_kWh": 3.27,
+        "location": {
+            "latitude": 5.5883445,
+            "longitude": 30.410977,
+            "region": "South Lesliebury"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 32,
+            "humidity": 81,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518141Z"
+    },
+    {
+        "raspberryPiId": "RPi026",
+        "batterySize_kWh": 11.6,
+        "maxBatteryPower_kW": 6.63,
+        "solarPanelSize_peak_kW": 1.61,
+        "averageConsumption_kWh": 2.98,
+        "location": {
+            "latitude": 39.2880925,
+            "longitude": -107.872776,
+            "region": "South Ashley"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 19,
+            "humidity": 62,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518178Z"
+    },
+    {
+        "raspberryPiId": "RPi027",
+        "batterySize_kWh": 17.96,
+        "maxBatteryPower_kW": 5.38,
+        "solarPanelSize_peak_kW": 3.55,
+        "averageConsumption_kWh": 3.87,
+        "location": {
+            "latitude": -58.858361,
+            "longitude": -144.033188,
+            "region": "Floydchester"
+        },
+        "networkTariffs": {
+            "peak": 0.2,
+            "offPeak": 0.05
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": -10,
+            "humidity": 69,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.518226Z"
+    },
+    {
+        "raspberryPiId": "RPi028",
+        "batterySize_kWh": 18.45,
+        "maxBatteryPower_kW": 5.82,
+        "solarPanelSize_peak_kW": 3.13,
+        "averageConsumption_kWh": 1.99,
+        "location": {
+            "latitude": -76.2289645,
+            "longitude": -8.314721,
+            "region": "Lake Michaelburgh"
+        },
+        "networkTariffs": {
+            "peak": 0.15,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 17,
+            "humidity": 58,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518264Z"
+    },
+    {
+        "raspberryPiId": "RPi029",
+        "batterySize_kWh": 10.25,
+        "maxBatteryPower_kW": 1.77,
+        "solarPanelSize_peak_kW": 3.12,
+        "averageConsumption_kWh": 4.16,
+        "location": {
+            "latitude": -88.9792295,
+            "longitude": 128.439038,
+            "region": "Kimberlybury"
+        },
+        "networkTariffs": {
+            "peak": 0.23,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 22,
+            "humidity": 33,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.518300Z"
+    },
+    {
+        "raspberryPiId": "RPi030",
+        "batterySize_kWh": 17.38,
+        "maxBatteryPower_kW": 1.69,
+        "solarPanelSize_peak_kW": 2.25,
+        "averageConsumption_kWh": 3.99,
+        "location": {
+            "latitude": -87.249873,
+            "longitude": -139.568453,
+            "region": "Darrellside"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 26,
+            "humidity": 70,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.518336Z"
+    },
+    {
+        "raspberryPiId": "RPi031",
+        "batterySize_kWh": 6.11,
+        "maxBatteryPower_kW": 1.13,
+        "solarPanelSize_peak_kW": 1.65,
+        "averageConsumption_kWh": 1.88,
+        "location": {
+            "latitude": 57.342086,
+            "longitude": 108.624741,
+            "region": "Port Kennethhaven"
+        },
+        "networkTariffs": {
+            "peak": 0.2,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": -9,
+            "humidity": 58,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.518373Z"
+    },
+    {
+        "raspberryPiId": "RPi032",
+        "batterySize_kWh": 8.42,
+        "maxBatteryPower_kW": 2.65,
+        "solarPanelSize_peak_kW": 2.08,
+        "averageConsumption_kWh": 2.18,
+        "location": {
+            "latitude": 11.1270005,
+            "longitude": 66.677358,
+            "region": "Jonesland"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 0,
+            "humidity": 59,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518427Z"
+    },
+    {
+        "raspberryPiId": "RPi033",
+        "batterySize_kWh": 6.25,
+        "maxBatteryPower_kW": 9.94,
+        "solarPanelSize_peak_kW": 2.81,
+        "averageConsumption_kWh": 1.52,
+        "location": {
+            "latitude": 4.1943015,
+            "longitude": 35.154911,
+            "region": "East Randallside"
+        },
+        "networkTariffs": {
+            "peak": 0.16,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 18,
+            "humidity": 34,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.518472Z"
+    },
+    {
+        "raspberryPiId": "RPi034",
+        "batterySize_kWh": 16.16,
+        "maxBatteryPower_kW": 2.44,
+        "solarPanelSize_peak_kW": 4.83,
+        "averageConsumption_kWh": 1.47,
+        "location": {
+            "latitude": 66.963076,
+            "longitude": -91.285078,
+            "region": "North Ashley"
+        },
+        "networkTariffs": {
+            "peak": 0.3,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 11,
+            "humidity": 61,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518509Z"
+    },
+    {
+        "raspberryPiId": "RPi035",
+        "batterySize_kWh": 8.83,
+        "maxBatteryPower_kW": 7.55,
+        "solarPanelSize_peak_kW": 2.55,
+        "averageConsumption_kWh": 3.46,
+        "location": {
+            "latitude": 27.768015,
+            "longitude": 104.132912,
+            "region": "West Virginiabury"
+        },
+        "networkTariffs": {
+            "peak": 0.16,
+            "offPeak": 0.13
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 14,
+            "humidity": 79,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.518546Z"
+    },
+    {
+        "raspberryPiId": "RPi036",
+        "batterySize_kWh": 11.13,
+        "maxBatteryPower_kW": 4.94,
+        "solarPanelSize_peak_kW": 4.64,
+        "averageConsumption_kWh": 4.75,
+        "location": {
+            "latitude": -85.3618725,
+            "longitude": 46.17807,
+            "region": "New Lisa"
+        },
+        "networkTariffs": {
+            "peak": 0.29,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 3,
+            "humidity": 74,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.518582Z"
+    },
+    {
+        "raspberryPiId": "RPi037",
+        "batterySize_kWh": 12.86,
+        "maxBatteryPower_kW": 2.63,
+        "solarPanelSize_peak_kW": 4.65,
+        "averageConsumption_kWh": 1.68,
+        "location": {
+            "latitude": 18.948763,
+            "longitude": -104.171238,
+            "region": "Armstrongburgh"
+        },
+        "networkTariffs": {
+            "peak": 0.16,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 19,
+            "humidity": 79,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.518629Z"
+    },
+    {
+        "raspberryPiId": "RPi038",
+        "batterySize_kWh": 8.0,
+        "maxBatteryPower_kW": 3.24,
+        "solarPanelSize_peak_kW": 1.41,
+        "averageConsumption_kWh": 4.83,
+        "location": {
+            "latitude": 52.8376885,
+            "longitude": 109.168705,
+            "region": "West Debra"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 4,
+            "humidity": 53,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.518665Z"
+    },
+    {
+        "raspberryPiId": "RPi039",
+        "batterySize_kWh": 14.14,
+        "maxBatteryPower_kW": 5.09,
+        "solarPanelSize_peak_kW": 1.7,
+        "averageConsumption_kWh": 4.99,
+        "location": {
+            "latitude": -85.554962,
+            "longitude": 159.438593,
+            "region": "West Robertmouth"
+        },
+        "networkTariffs": {
+            "peak": 0.24,
+            "offPeak": 0.13
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 13,
+            "humidity": 35,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.518703Z"
+    },
+    {
+        "raspberryPiId": "RPi040",
+        "batterySize_kWh": 7.06,
+        "maxBatteryPower_kW": 4.44,
+        "solarPanelSize_peak_kW": 3.74,
+        "averageConsumption_kWh": 2.04,
+        "location": {
+            "latitude": 76.9537885,
+            "longitude": -95.593372,
+            "region": "Luismouth"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 5,
+            "humidity": 53,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518739Z"
+    },
+    {
+        "raspberryPiId": "RPi041",
+        "batterySize_kWh": 6.06,
+        "maxBatteryPower_kW": 3.62,
+        "solarPanelSize_peak_kW": 4.36,
+        "averageConsumption_kWh": 1.59,
+        "location": {
+            "latitude": 30.967387,
+            "longitude": 152.313316,
+            "region": "Brittanyfort"
+        },
+        "networkTariffs": {
+            "peak": 0.16,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": -1,
+            "humidity": 63,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518785Z"
+    },
+    {
+        "raspberryPiId": "RPi042",
+        "batterySize_kWh": 14.72,
+        "maxBatteryPower_kW": 1.87,
+        "solarPanelSize_peak_kW": 2.26,
+        "averageConsumption_kWh": 1.03,
+        "location": {
+            "latitude": 64.8958945,
+            "longitude": 107.149863,
+            "region": "South Taylor"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 29,
+            "humidity": 89,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.518822Z"
+    },
+    {
+        "raspberryPiId": "RPi043",
+        "batterySize_kWh": 12.3,
+        "maxBatteryPower_kW": 4.93,
+        "solarPanelSize_peak_kW": 1.04,
+        "averageConsumption_kWh": 4.33,
+        "location": {
+            "latitude": 52.520182,
+            "longitude": 134.684197,
+            "region": "Claudiafurt"
+        },
+        "networkTariffs": {
+            "peak": 0.23,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 15,
+            "humidity": 68,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.518858Z"
+    },
+    {
+        "raspberryPiId": "RPi044",
+        "batterySize_kWh": 18.84,
+        "maxBatteryPower_kW": 2.73,
+        "solarPanelSize_peak_kW": 1.99,
+        "averageConsumption_kWh": 4.5,
+        "location": {
+            "latitude": -72.294891,
+            "longitude": -125.466273,
+            "region": "Ramirezshire"
+        },
+        "networkTariffs": {
+            "peak": 0.29,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 26,
+            "humidity": 86,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518906Z"
+    },
+    {
+        "raspberryPiId": "RPi045",
+        "batterySize_kWh": 16.07,
+        "maxBatteryPower_kW": 9.36,
+        "solarPanelSize_peak_kW": 1.81,
+        "averageConsumption_kWh": 2.29,
+        "location": {
+            "latitude": 41.599948,
+            "longitude": 139.240662,
+            "region": "South Ronaldtown"
+        },
+        "networkTariffs": {
+            "peak": 0.21,
+            "offPeak": 0.13
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": -6,
+            "humidity": 56,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.518943Z"
+    },
+    {
+        "raspberryPiId": "RPi046",
+        "batterySize_kWh": 17.54,
+        "maxBatteryPower_kW": 1.32,
+        "solarPanelSize_peak_kW": 3.1,
+        "averageConsumption_kWh": 3.89,
+        "location": {
+            "latitude": 12.084758,
+            "longitude": -143.361066,
+            "region": "East Lee"
+        },
+        "networkTariffs": {
+            "peak": 0.25,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 26,
+            "humidity": 43,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.518979Z"
+    },
+    {
+        "raspberryPiId": "RPi047",
+        "batterySize_kWh": 10.51,
+        "maxBatteryPower_kW": 5.44,
+        "solarPanelSize_peak_kW": 3.86,
+        "averageConsumption_kWh": 3.28,
+        "location": {
+            "latitude": -65.6839775,
+            "longitude": -118.959395,
+            "region": "Rachelton"
+        },
+        "networkTariffs": {
+            "peak": 0.21,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 33,
+            "humidity": 31,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.519014Z"
+    },
+    {
+        "raspberryPiId": "RPi048",
+        "batterySize_kWh": 12.9,
+        "maxBatteryPower_kW": 5.42,
+        "solarPanelSize_peak_kW": 3.6,
+        "averageConsumption_kWh": 2.13,
+        "location": {
+            "latitude": -19.8532785,
+            "longitude": -115.349302,
+            "region": "Nathanview"
+        },
+        "networkTariffs": {
+            "peak": 0.25,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 20,
+            "humidity": 52,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519057Z"
+    },
+    {
+        "raspberryPiId": "RPi049",
+        "batterySize_kWh": 12.03,
+        "maxBatteryPower_kW": 5.91,
+        "solarPanelSize_peak_kW": 2.35,
+        "averageConsumption_kWh": 4.28,
+        "location": {
+            "latitude": -6.38551,
+            "longitude": 138.107527,
+            "region": "Carrillomouth"
+        },
+        "networkTariffs": {
+            "peak": 0.27,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 16,
+            "humidity": 56,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.519105Z"
+    },
+    {
+        "raspberryPiId": "RPi050",
+        "batterySize_kWh": 7.92,
+        "maxBatteryPower_kW": 2.32,
+        "solarPanelSize_peak_kW": 2.34,
+        "averageConsumption_kWh": 3.23,
+        "location": {
+            "latitude": -66.976083,
+            "longitude": 60.630967,
+            "region": "Jamesbury"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 26,
+            "humidity": 41,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519152Z"
+    },
+    {
+        "raspberryPiId": "RPi051",
+        "batterySize_kWh": 16.96,
+        "maxBatteryPower_kW": 8.36,
+        "solarPanelSize_peak_kW": 3.16,
+        "averageConsumption_kWh": 1.13,
+        "location": {
+            "latitude": 72.121766,
+            "longitude": 55.174614,
+            "region": "Nicoleside"
+        },
+        "networkTariffs": {
+            "peak": 0.3,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 29,
+            "humidity": 66,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519188Z"
+    },
+    {
+        "raspberryPiId": "RPi052",
+        "batterySize_kWh": 9.96,
+        "maxBatteryPower_kW": 8.16,
+        "solarPanelSize_peak_kW": 4.06,
+        "averageConsumption_kWh": 2.54,
+        "location": {
+            "latitude": -52.5235275,
+            "longitude": -15.129982,
+            "region": "New Markberg"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 9,
+            "humidity": 65,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519226Z"
+    },
+    {
+        "raspberryPiId": "RPi053",
+        "batterySize_kWh": 16.82,
+        "maxBatteryPower_kW": 2.27,
+        "solarPanelSize_peak_kW": 1.81,
+        "averageConsumption_kWh": 1.53,
+        "location": {
+            "latitude": -83.9883245,
+            "longitude": 136.242104,
+            "region": "Danielmouth"
+        },
+        "networkTariffs": {
+            "peak": 0.17,
+            "offPeak": 0.15
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 28,
+            "humidity": 51,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519273Z"
+    },
+    {
+        "raspberryPiId": "RPi054",
+        "batterySize_kWh": 14.49,
+        "maxBatteryPower_kW": 2.57,
+        "solarPanelSize_peak_kW": 1.97,
+        "averageConsumption_kWh": 3.02,
+        "location": {
+            "latitude": 64.845068,
+            "longitude": 116.927059,
+            "region": "West Nicolehaven"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.1
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 22,
+            "humidity": 64,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.519311Z"
+    },
+    {
+        "raspberryPiId": "RPi055",
+        "batterySize_kWh": 11.6,
+        "maxBatteryPower_kW": 2.61,
+        "solarPanelSize_peak_kW": 1.8,
+        "averageConsumption_kWh": 4.1,
+        "location": {
+            "latitude": 68.1666875,
+            "longitude": 71.4353,
+            "region": "New Peter"
+        },
+        "networkTariffs": {
+            "peak": 0.24,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 0,
+            "humidity": 68,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519346Z"
+    },
+    {
+        "raspberryPiId": "RPi056",
+        "batterySize_kWh": 17.99,
+        "maxBatteryPower_kW": 2.77,
+        "solarPanelSize_peak_kW": 1.87,
+        "averageConsumption_kWh": 1.22,
+        "location": {
+            "latitude": 66.6073015,
+            "longitude": 5.978248,
+            "region": "New Sharonshire"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 2,
+            "humidity": 49,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519388Z"
+    },
+    {
+        "raspberryPiId": "RPi057",
+        "batterySize_kWh": 19.05,
+        "maxBatteryPower_kW": 3.4,
+        "solarPanelSize_peak_kW": 1.09,
+        "averageConsumption_kWh": 4.46,
+        "location": {
+            "latitude": -66.5721985,
+            "longitude": -173.866274,
+            "region": "Lake Kimberly"
+        },
+        "networkTariffs": {
+            "peak": 0.17,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 5,
+            "humidity": 42,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519424Z"
+    },
+    {
+        "raspberryPiId": "RPi058",
+        "batterySize_kWh": 18.66,
+        "maxBatteryPower_kW": 3.46,
+        "solarPanelSize_peak_kW": 1.32,
+        "averageConsumption_kWh": 4.56,
+        "location": {
+            "latitude": 71.9999365,
+            "longitude": -76.02747,
+            "region": "East Deborah"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 13,
+            "humidity": 84,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519460Z"
+    },
+    {
+        "raspberryPiId": "RPi059",
+        "batterySize_kWh": 9.39,
+        "maxBatteryPower_kW": 1.53,
+        "solarPanelSize_peak_kW": 1.81,
+        "averageConsumption_kWh": 3.1,
+        "location": {
+            "latitude": 28.994828,
+            "longitude": -25.883382,
+            "region": "Rossberg"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": -6,
+            "humidity": 80,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.519496Z"
+    },
+    {
+        "raspberryPiId": "RPi060",
+        "batterySize_kWh": 6.12,
+        "maxBatteryPower_kW": 2.69,
+        "solarPanelSize_peak_kW": 2.88,
+        "averageConsumption_kWh": 3.6,
+        "location": {
+            "latitude": 10.7466795,
+            "longitude": 56.997824,
+            "region": "Parkershire"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 10,
+            "humidity": 41,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519556Z"
+    },
+    {
+        "raspberryPiId": "RPi061",
+        "batterySize_kWh": 8.13,
+        "maxBatteryPower_kW": 2.68,
+        "solarPanelSize_peak_kW": 2.82,
+        "averageConsumption_kWh": 4.21,
+        "location": {
+            "latitude": 45.9210145,
+            "longitude": -51.625847,
+            "region": "South Paula"
+        },
+        "networkTariffs": {
+            "peak": 0.17,
+            "offPeak": 0.1
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 15,
+            "humidity": 70,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519592Z"
+    },
+    {
+        "raspberryPiId": "RPi062",
+        "batterySize_kWh": 7.59,
+        "maxBatteryPower_kW": 9.73,
+        "solarPanelSize_peak_kW": 1.67,
+        "averageConsumption_kWh": 1.58,
+        "location": {
+            "latitude": 44.774427,
+            "longitude": 65.419389,
+            "region": "East Nancy"
+        },
+        "networkTariffs": {
+            "peak": 0.28,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 13,
+            "humidity": 59,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519627Z"
+    },
+    {
+        "raspberryPiId": "RPi063",
+        "batterySize_kWh": 11.29,
+        "maxBatteryPower_kW": 7.88,
+        "solarPanelSize_peak_kW": 4.12,
+        "averageConsumption_kWh": 3.22,
+        "location": {
+            "latitude": -32.0779695,
+            "longitude": 51.51173,
+            "region": "East Jessica"
+        },
+        "networkTariffs": {
+            "peak": 0.16,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 29,
+            "humidity": 65,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519663Z"
+    },
+    {
+        "raspberryPiId": "RPi064",
+        "batterySize_kWh": 15.05,
+        "maxBatteryPower_kW": 6.32,
+        "solarPanelSize_peak_kW": 3.8,
+        "averageConsumption_kWh": 1.57,
+        "location": {
+            "latitude": 35.5689835,
+            "longitude": 87.619608,
+            "region": "Port Anthony"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 12,
+            "humidity": 71,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.519699Z"
+    },
+    {
+        "raspberryPiId": "RPi065",
+        "batterySize_kWh": 13.79,
+        "maxBatteryPower_kW": 8.98,
+        "solarPanelSize_peak_kW": 3.75,
+        "averageConsumption_kWh": 4.59,
+        "location": {
+            "latitude": -39.597292,
+            "longitude": 102.107908,
+            "region": "Lake Kaylaton"
+        },
+        "networkTariffs": {
+            "peak": 0.29,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 2,
+            "humidity": 37,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.519737Z"
+    },
+    {
+        "raspberryPiId": "RPi066",
+        "batterySize_kWh": 8.51,
+        "maxBatteryPower_kW": 4.72,
+        "solarPanelSize_peak_kW": 2.1,
+        "averageConsumption_kWh": 3.87,
+        "location": {
+            "latitude": 48.914455,
+            "longitude": -47.001204,
+            "region": "North Brendafort"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 13,
+            "humidity": 90,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.519774Z"
+    },
+    {
+        "raspberryPiId": "RPi067",
+        "batterySize_kWh": 5.66,
+        "maxBatteryPower_kW": 6.17,
+        "solarPanelSize_peak_kW": 1.77,
+        "averageConsumption_kWh": 1.99,
+        "location": {
+            "latitude": 26.0804635,
+            "longitude": 74.284378,
+            "region": "Shannonmouth"
+        },
+        "networkTariffs": {
+            "peak": 0.25,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 32,
+            "humidity": 30,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.519810Z"
+    },
+    {
+        "raspberryPiId": "RPi068",
+        "batterySize_kWh": 18.91,
+        "maxBatteryPower_kW": 4.56,
+        "solarPanelSize_peak_kW": 3.42,
+        "averageConsumption_kWh": 2.08,
+        "location": {
+            "latitude": -53.2423885,
+            "longitude": -106.471379,
+            "region": "New Laurenfurt"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 26,
+            "humidity": 73,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.519847Z"
+    },
+    {
+        "raspberryPiId": "RPi069",
+        "batterySize_kWh": 5.33,
+        "maxBatteryPower_kW": 6.43,
+        "solarPanelSize_peak_kW": 1.76,
+        "averageConsumption_kWh": 1.25,
+        "location": {
+            "latitude": -57.600739,
+            "longitude": 114.579281,
+            "region": "Gonzalezberg"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.15
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 27,
+            "humidity": 78,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519895Z"
+    },
+    {
+        "raspberryPiId": "RPi070",
+        "batterySize_kWh": 10.13,
+        "maxBatteryPower_kW": 9.04,
+        "solarPanelSize_peak_kW": 2.12,
+        "averageConsumption_kWh": 3.81,
+        "location": {
+            "latitude": -9.4236905,
+            "longitude": -95.069275,
+            "region": "Heatherberg"
+        },
+        "networkTariffs": {
+            "peak": 0.15,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 9,
+            "humidity": 44,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.519931Z"
+    },
+    {
+        "raspberryPiId": "RPi071",
+        "batterySize_kWh": 6.35,
+        "maxBatteryPower_kW": 1.79,
+        "solarPanelSize_peak_kW": 1.66,
+        "averageConsumption_kWh": 4.71,
+        "location": {
+            "latitude": -49.7410735,
+            "longitude": -143.028826,
+            "region": "Victoriabury"
+        },
+        "networkTariffs": {
+            "peak": 0.23,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 24,
+            "humidity": 83,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.519972Z"
+    },
+    {
+        "raspberryPiId": "RPi072",
+        "batterySize_kWh": 15.18,
+        "maxBatteryPower_kW": 9.79,
+        "solarPanelSize_peak_kW": 3.72,
+        "averageConsumption_kWh": 4.07,
+        "location": {
+            "latitude": 3.2157605,
+            "longitude": -54.595816,
+            "region": "West Sandra"
+        },
+        "networkTariffs": {
+            "peak": 0.2,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 13,
+            "humidity": 58,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.520009Z"
+    },
+    {
+        "raspberryPiId": "RPi073",
+        "batterySize_kWh": 10.0,
+        "maxBatteryPower_kW": 9.57,
+        "solarPanelSize_peak_kW": 4.81,
+        "averageConsumption_kWh": 1.24,
+        "location": {
+            "latitude": 83.751563,
+            "longitude": -81.348344,
+            "region": "West Melissa"
+        },
+        "networkTariffs": {
+            "peak": 0.27,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": -7,
+            "humidity": 86,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.520054Z"
+    },
+    {
+        "raspberryPiId": "RPi074",
+        "batterySize_kWh": 11.5,
+        "maxBatteryPower_kW": 6.14,
+        "solarPanelSize_peak_kW": 4.59,
+        "averageConsumption_kWh": 3.06,
+        "location": {
+            "latitude": -70.689188,
+            "longitude": 51.066422,
+            "region": "Fordtown"
+        },
+        "networkTariffs": {
+            "peak": 0.28,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 5,
+            "humidity": 59,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.520109Z"
+    },
+    {
+        "raspberryPiId": "RPi075",
+        "batterySize_kWh": 18.37,
+        "maxBatteryPower_kW": 1.06,
+        "solarPanelSize_peak_kW": 1.1,
+        "averageConsumption_kWh": 1.96,
+        "location": {
+            "latitude": 53.571998,
+            "longitude": -156.655716,
+            "region": "North Kellieside"
+        },
+        "networkTariffs": {
+            "peak": 0.2,
+            "offPeak": 0.1
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 5,
+            "humidity": 36,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.520146Z"
+    },
+    {
+        "raspberryPiId": "RPi076",
+        "batterySize_kWh": 12.42,
+        "maxBatteryPower_kW": 5.21,
+        "solarPanelSize_peak_kW": 4.12,
+        "averageConsumption_kWh": 2.16,
+        "location": {
+            "latitude": -10.4482545,
+            "longitude": 176.572755,
+            "region": "Hernandezburgh"
+        },
+        "networkTariffs": {
+            "peak": 0.21,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 18,
+            "humidity": 50,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.520194Z"
+    },
+    {
+        "raspberryPiId": "RPi077",
+        "batterySize_kWh": 11.16,
+        "maxBatteryPower_kW": 1.86,
+        "solarPanelSize_peak_kW": 1.29,
+        "averageConsumption_kWh": 4.23,
+        "location": {
+            "latitude": -58.323827,
+            "longitude": -26.287792,
+            "region": "Bradleyside"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 34,
+            "humidity": 76,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.520230Z"
+    },
+    {
+        "raspberryPiId": "RPi078",
+        "batterySize_kWh": 11.57,
+        "maxBatteryPower_kW": 5.48,
+        "solarPanelSize_peak_kW": 2.04,
+        "averageConsumption_kWh": 4.11,
+        "location": {
+            "latitude": 68.003549,
+            "longitude": -53.014665,
+            "region": "East Caroline"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.08
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": -1,
+            "humidity": 83,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.520266Z"
+    },
+    {
+        "raspberryPiId": "RPi079",
+        "batterySize_kWh": 10.52,
+        "maxBatteryPower_kW": 8.52,
+        "solarPanelSize_peak_kW": 1.46,
+        "averageConsumption_kWh": 4.87,
+        "location": {
+            "latitude": -86.6621175,
+            "longitude": -29.405292,
+            "region": "Rangelside"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 19,
+            "humidity": 67,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.520329Z"
+    },
+    {
+        "raspberryPiId": "RPi080",
+        "batterySize_kWh": 9.05,
+        "maxBatteryPower_kW": 2.47,
+        "solarPanelSize_peak_kW": 3.75,
+        "averageConsumption_kWh": 2.48,
+        "location": {
+            "latitude": 9.991427,
+            "longitude": 95.882784,
+            "region": "West Belinda"
+        },
+        "networkTariffs": {
+            "peak": 0.21,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 29,
+            "humidity": 67,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.520368Z"
+    },
+    {
+        "raspberryPiId": "RPi081",
+        "batterySize_kWh": 11.96,
+        "maxBatteryPower_kW": 8.11,
+        "solarPanelSize_peak_kW": 1.64,
+        "averageConsumption_kWh": 2.25,
+        "location": {
+            "latitude": -10.8268945,
+            "longitude": -40.702262,
+            "region": "Greenemouth"
+        },
+        "networkTariffs": {
+            "peak": 0.24,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 6,
+            "humidity": 77,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.520425Z"
+    },
+    {
+        "raspberryPiId": "RPi082",
+        "batterySize_kWh": 11.93,
+        "maxBatteryPower_kW": 8.16,
+        "solarPanelSize_peak_kW": 3.83,
+        "averageConsumption_kWh": 1.24,
+        "location": {
+            "latitude": -66.189915,
+            "longitude": -64.082186,
+            "region": "North Bethanyton"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.13
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 31,
+            "humidity": 73,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.520466Z"
+    },
+    {
+        "raspberryPiId": "RPi083",
+        "batterySize_kWh": 8.35,
+        "maxBatteryPower_kW": 3.98,
+        "solarPanelSize_peak_kW": 1.26,
+        "averageConsumption_kWh": 4.23,
+        "location": {
+            "latitude": 48.1945315,
+            "longitude": 142.725439,
+            "region": "Leestad"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.12
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 26,
+            "humidity": 90,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.520518Z"
+    },
+    {
+        "raspberryPiId": "RPi084",
+        "batterySize_kWh": 6.14,
+        "maxBatteryPower_kW": 2.3,
+        "solarPanelSize_peak_kW": 1.44,
+        "averageConsumption_kWh": 3.58,
+        "location": {
+            "latitude": -81.5518395,
+            "longitude": 32.740729,
+            "region": "New Alexanderfort"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 0,
+            "humidity": 40,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.520560Z"
+    },
+    {
+        "raspberryPiId": "RPi085",
+        "batterySize_kWh": 7.55,
+        "maxBatteryPower_kW": 9.2,
+        "solarPanelSize_peak_kW": 2.82,
+        "averageConsumption_kWh": 1.92,
+        "location": {
+            "latitude": -52.2012745,
+            "longitude": 23.395096,
+            "region": "Port Matthew"
+        },
+        "networkTariffs": {
+            "peak": 0.15,
+            "offPeak": 0.1
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 34,
+            "humidity": 51,
+            "weatherCondition": "Sn\u00f8"
+        },
+        "timestamp": "2024-10-25T18:21:45.520600Z"
+    },
+    {
+        "raspberryPiId": "RPi086",
+        "batterySize_kWh": 7.91,
+        "maxBatteryPower_kW": 2.97,
+        "solarPanelSize_peak_kW": 3.65,
+        "averageConsumption_kWh": 3.95,
+        "location": {
+            "latitude": -45.756076,
+            "longitude": -126.751588,
+            "region": "Davisburgh"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 11,
+            "humidity": 85,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.520648Z"
+    },
+    {
+        "raspberryPiId": "RPi087",
+        "batterySize_kWh": 14.73,
+        "maxBatteryPower_kW": 9.64,
+        "solarPanelSize_peak_kW": 1.62,
+        "averageConsumption_kWh": 3.86,
+        "location": {
+            "latitude": -23.443782,
+            "longitude": -12.615568,
+            "region": "North Charlottetown"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.1
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 28,
+            "humidity": 40,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.520685Z"
+    },
+    {
+        "raspberryPiId": "RPi088",
+        "batterySize_kWh": 9.74,
+        "maxBatteryPower_kW": 2.04,
+        "solarPanelSize_peak_kW": 2.44,
+        "averageConsumption_kWh": 2.46,
+        "location": {
+            "latitude": 72.4276225,
+            "longitude": -83.20774,
+            "region": "Nathanhaven"
+        },
+        "networkTariffs": {
+            "peak": 0.27,
+            "offPeak": 0.14
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 26,
+            "humidity": 58,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.520721Z"
+    },
+    {
+        "raspberryPiId": "RPi089",
+        "batterySize_kWh": 5.92,
+        "maxBatteryPower_kW": 5.67,
+        "solarPanelSize_peak_kW": 4.64,
+        "averageConsumption_kWh": 2.13,
+        "location": {
+            "latitude": -83.368295,
+            "longitude": 121.548595,
+            "region": "West Jennyside"
+        },
+        "networkTariffs": {
+            "peak": 0.19,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": -3,
+            "humidity": 48,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.520762Z"
+    },
+    {
+        "raspberryPiId": "RPi090",
+        "batterySize_kWh": 17.03,
+        "maxBatteryPower_kW": 3.67,
+        "solarPanelSize_peak_kW": 2.19,
+        "averageConsumption_kWh": 3.06,
+        "location": {
+            "latitude": -49.618665,
+            "longitude": 165.53666,
+            "region": "Zacharyberg"
+        },
+        "networkTariffs": {
+            "peak": 0.21,
+            "offPeak": 0.06
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 10,
+            "humidity": 64,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.520797Z"
+    },
+    {
+        "raspberryPiId": "RPi091",
+        "batterySize_kWh": 15.26,
+        "maxBatteryPower_kW": 1.3,
+        "solarPanelSize_peak_kW": 4.69,
+        "averageConsumption_kWh": 4.65,
+        "location": {
+            "latitude": -40.500894,
+            "longitude": 29.035298,
+            "region": "New Mary"
+        },
+        "networkTariffs": {
+            "peak": 0.22,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 6,
+            "humidity": 31,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.520833Z"
+    },
+    {
+        "raspberryPiId": "RPi092",
+        "batterySize_kWh": 13.66,
+        "maxBatteryPower_kW": 2.59,
+        "solarPanelSize_peak_kW": 2.98,
+        "averageConsumption_kWh": 1.65,
+        "location": {
+            "latitude": 49.7064135,
+            "longitude": 152.894241,
+            "region": "North Danielside"
+        },
+        "networkTariffs": {
+            "peak": 0.27,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 29,
+            "humidity": 47,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.520870Z"
+    },
+    {
+        "raspberryPiId": "RPi093",
+        "batterySize_kWh": 8.97,
+        "maxBatteryPower_kW": 5.36,
+        "solarPanelSize_peak_kW": 4.71,
+        "averageConsumption_kWh": 2.41,
+        "location": {
+            "latitude": -80.6132915,
+            "longitude": -142.190724,
+            "region": "Lake Michelle"
+        },
+        "networkTariffs": {
+            "peak": 0.21,
+            "offPeak": 0.07
+        },
+        "solarPanelDirection": "Nord",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 33,
+            "humidity": 46,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.520906Z"
+    },
+    {
+        "raspberryPiId": "RPi094",
+        "batterySize_kWh": 19.31,
+        "maxBatteryPower_kW": 9.41,
+        "solarPanelSize_peak_kW": 3.74,
+        "averageConsumption_kWh": 2.48,
+        "location": {
+            "latitude": -61.99013,
+            "longitude": 62.464457,
+            "region": "West Robert"
+        },
+        "networkTariffs": {
+            "peak": 0.27,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 21,
+            "humidity": 65,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.520957Z"
+    },
+    {
+        "raspberryPiId": "RPi095",
+        "batterySize_kWh": 18.02,
+        "maxBatteryPower_kW": 2.38,
+        "solarPanelSize_peak_kW": 2.87,
+        "averageConsumption_kWh": 3.85,
+        "location": {
+            "latitude": -19.3857585,
+            "longitude": 77.293969,
+            "region": "Westburgh"
+        },
+        "networkTariffs": {
+            "peak": 0.25,
+            "offPeak": 0.1
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 32,
+            "humidity": 86,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.521006Z"
+    },
+    {
+        "raspberryPiId": "RPi096",
+        "batterySize_kWh": 16.38,
+        "maxBatteryPower_kW": 9.71,
+        "solarPanelSize_peak_kW": 3.51,
+        "averageConsumption_kWh": 4.55,
+        "location": {
+            "latitude": 22.5537255,
+            "longitude": 158.098379,
+            "region": "North Kristina"
+        },
+        "networkTariffs": {
+            "peak": 0.18,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": 17,
+            "humidity": 85,
+            "weatherCondition": "Skyet"
+        },
+        "timestamp": "2024-10-25T18:21:45.521043Z"
+    },
+    {
+        "raspberryPiId": "RPi097",
+        "batterySize_kWh": 17.52,
+        "maxBatteryPower_kW": 5.1,
+        "solarPanelSize_peak_kW": 2.1,
+        "averageConsumption_kWh": 4.59,
+        "location": {
+            "latitude": 5.449542,
+            "longitude": 51.557736,
+            "region": "North Samueltown"
+        },
+        "networkTariffs": {
+            "peak": 0.16,
+            "offPeak": 0.13
+        },
+        "solarPanelDirection": "\u00d8st",
+        "consumptionPattern": "Fabrikk",
+        "weather": {
+            "temperature": 25,
+            "humidity": 32,
+            "weatherCondition": "Regn"
+        },
+        "timestamp": "2024-10-25T18:21:45.521080Z"
+    },
+    {
+        "raspberryPiId": "RPi098",
+        "batterySize_kWh": 12.22,
+        "maxBatteryPower_kW": 1.47,
+        "solarPanelSize_peak_kW": 2.53,
+        "averageConsumption_kWh": 3.11,
+        "location": {
+            "latitude": 4.5457325,
+            "longitude": 70.916646,
+            "region": "Nelsonville"
+        },
+        "networkTariffs": {
+            "peak": 0.3,
+            "offPeak": 0.09
+        },
+        "solarPanelDirection": "S\u00f8r",
+        "consumptionPattern": "N\u00e6ringsbygg",
+        "weather": {
+            "temperature": -10,
+            "humidity": 72,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.521128Z"
+    },
+    {
+        "raspberryPiId": "RPi099",
+        "batterySize_kWh": 7.51,
+        "maxBatteryPower_kW": 4.75,
+        "solarPanelSize_peak_kW": 1.51,
+        "averageConsumption_kWh": 4.86,
+        "location": {
+            "latitude": 57.1857675,
+            "longitude": 30.690728,
+            "region": "Vaughanhaven"
+        },
+        "networkTariffs": {
+            "peak": 0.26,
+            "offPeak": 0.11
+        },
+        "solarPanelDirection": "Vest",
+        "consumptionPattern": "Bolig",
+        "weather": {
+            "temperature": 30,
+            "humidity": 41,
+            "weatherCondition": "Sol"
+        },
+        "timestamp": "2024-10-25T18:21:45.521179Z"
+    }
+]

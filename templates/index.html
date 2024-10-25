@@ -1,12 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halla verden! Dette er gruppe 4</title>
-    
+    <title>Connected Raspberry Pi Domains</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Previous styles remain the same */
+        :root {
+            --primary-color: #2D3748;
+            --secondary-color: #4A5568;
+            --accent-color: #4299E1;
+            --background-color: #F7FAFC;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        body {
+            background-color: #f8f9ff;
+            color: var(--primary-color);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Enhanced animated background */
+        .background-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.4;
+        }
+
+        .shape-1 {
+            width: 500px;
+            height: 500px;
+            background: #4299E1;
+            top: -100px;
+            right: -100px;
+            animation: moveShape1 25s infinite linear;
+        }
+
+        .shape-2 {
+            width: 400px;
+            height: 400px;
+            background: #9F7AEA;
+            bottom: -150px;
+            left: -100px;
+            animation: moveShape2 30s infinite linear;
+        }
+
+        .shape-3 {
+            width: 300px;
+            height: 300px;
+            background: #48BB78;
+            top: 50%;
+            left: 50%;
+            animation: moveShape3 35s infinite linear;
+        }
+
+        /* Additional shapes for more dynamic background */
+        .shape-4 {
+            width: 250px;
+            height: 250px;
+            background: #ED8936;
+            top: 30%;
+            right: 20%;
+            opacity: 0.3;
+            animation: moveShape4 40s infinite linear;
+        }
+
+        .shape-5 {
+            width: 350px;
+            height: 350px;
+            background: #667EEA;
+            bottom: 20%;
+            right: -100px;
+            opacity: 0.2;
+            animation: moveShape5 45s infinite linear;
+        }
+
+        @keyframes moveShape1 {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(100px, 100px) rotate(120deg); }
+            66% { transform: translate(-50px, 150px) rotate(240deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+
+        @keyframes moveShape2 {
+            0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+            25% { transform: translate(150px, -50px) rotate(90deg) scale(1.1); }
+            50% { transform: translate(100px, 100px) rotate(180deg) scale(0.9); }
+            75% { transform: translate(-50px, 50px) rotate(270deg) scale(1.1); }
+            100% { transform: translate(0, 0) rotate(360deg) scale(1); }
+        }
+
+        @keyframes moveShape3 {
+            0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+            33% { transform: translate(-100px, -100px) rotate(-120deg) scale(1.2); }
+            66% { transform: translate(100px, -50px) rotate(-240deg) scale(0.8); }
+            100% { transform: translate(0, 0) rotate(-360deg) scale(1); }
+        }
+
+        @keyframes moveShape4 {
+            0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+            50% { transform: translate(-150px, 100px) scale(1.2) rotate(180deg); }
+            100% { transform: translate(0, 0) scale(1) rotate(360deg); }
+        }
+
+        @keyframes moveShape5 {
+            0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+            33% { transform: translate(-100px, -50px) scale(1.1) rotate(120deg); }
+            66% { transform: translate(50px, -100px) scale(0.9) rotate(240deg); }
+            100% { transform: translate(0, 0) scale(1) rotate(360deg); }
+        }
+
+        /* Rest of your existing styles */
+        .container {
+            max-width: 1200px;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        /* ... (rest of the previous styles remain the same) ... */
+
+    </style>
 </head>
 <body>
-   <h1>Hei verden</h1> 
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Rest of your HTML remains the same -->
+    <div class="container">
+        <h1>Connected Raspberry Pi Domains</h1>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        
+        {% for domain in domains %}
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        {{ domain.domain }}
+                        <span class="domain-id">ID: {{ domain.id }}</span>
+                    </h2>
+                </div>
+                <div class="card-body">
+                    {% if domain.dns_records %}
+                        <h5 class="mb-3">DNS Records</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Host</th>
+                                        <th>Type</th>
+                                        <th>Data</th>
+                                        <th>TTL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for dns in domain.dns_records %}
+                                        <tr>
+                                            <td>{{ dns.host }}</td>
+                                            <td>{{ dns.type }}</td>
+                                            <td>{{ dns.data }}</td>
+                                            <td>{{ dns.ttl }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <p class="no-records">No DNS records found for this domain.</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
