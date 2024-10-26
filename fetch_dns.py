@@ -1,7 +1,9 @@
 import os
 
-from flask import Flask, flash, json, jsonify, render_template
+from flask import Flask, flash, json, jsonify, redirect, render_template
 from requests import exceptions, get
+
+GOOGLE_AUTH = True
 
 app = Flask(__name__)
 app.secret_key = "your_secret_key"  # Replace with a secure key
@@ -93,6 +95,9 @@ def index():
 
 @app.route("/")
 def signin():
+    if not GOOGLE_AUTH:
+        return redirect("/index")
+
     return render_template("sign_in.html")
 
 
