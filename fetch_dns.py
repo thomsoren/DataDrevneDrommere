@@ -1,21 +1,27 @@
 import os
-from flask import Flask, json, jsonify, render_template, flash
-from requests import get, exceptions
+
+from flask import Flask, flash, json, jsonify, render_template
+from requests import exceptions, get
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Replace with a secure key
+app.secret_key = "your_secret_key"  # Replace with a secure key
+
 
 # Load UUID-to-user mappings once at startup
 def load_uuid_mapping():
     try:
-        data_file_path = os.path.join(os.path.dirname(__file__), 'data', 'uuid_user_mapping.json')
+        data_file_path = os.path.join(
+            os.path.dirname(__file__), "data", "uuid_user_mapping.json"
+        )
         with open(data_file_path) as f:
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         flash("Mapping file could not be loaded or found.", "danger")
         return {}
 
+
 uuid_mapping = load_uuid_mapping()
+
 
 def fetch_connections():
     try:
@@ -24,7 +30,12 @@ def fetch_connections():
         data = response.json()
     except exceptions.RequestException as e:
         flash(f"Error fetching proxy data: {e}", "danger")
-        return {"proxies": [], "total_online": 0, "total_traffic_in": 0, "total_traffic_out": 0}
+        return {
+            "proxies": [],
+            "total_online": 0,
+            "total_traffic_in": 0,
+            "total_traffic_out": 0,
+        }
 
     # Apply mappings
     for proxy in data.get("proxies", []):
@@ -37,58 +48,72 @@ def fetch_connections():
             proxy["location"] = "Unknown Location"
 
     # Compute summary statistics
-    total_online = sum(1 for proxy in data.get("proxies", []) if proxy.get("status") == "online")
-    total_traffic_in = sum(proxy.get("todayTrafficIn", 0) for proxy in data.get("proxies", []))
-    total_traffic_out = sum(proxy.get("todayTrafficOut", 0) for proxy in data.get("proxies", []))
+    total_online = sum(
+        1 for proxy in data.get("proxies", []) if proxy.get("status") == "online"
+    )
+    total_traffic_in = sum(
+        proxy.get("todayTrafficIn", 0) for proxy in data.get("proxies", [])
+    )
+    total_traffic_out = sum(
+        proxy.get("todayTrafficOut", 0) for proxy in data.get("proxies", [])
+    )
 
     return {
         "proxies": data.get("proxies", []),
         "total_online": total_online,
         "total_traffic_in": total_traffic_in,
-        "total_traffic_out": total_traffic_out
+        "total_traffic_out": total_traffic_out,
     }
+
 
 @app.route("/data")
 def getData():
     data = fetch_connections()
     if data is None:
-        return jsonify({"error": "Failed to fetch data."}), 500  # 500 Internal Server Error
+        return (
+            jsonify({"error": "Failed to fetch data."}),
+            500,
+        )  # 500 Internal Server Error
 
     return jsonify({"proxies": data.get("proxies", [])}), 200  # 200 OK
+
 
 @app.route("/index")
 def index():
     data = fetch_connections()
-    
+
     if not data.get("proxies"):
         flash("No proxies found.", "warning")
-    
+
     return render_template(
-        'index.html',
+        "index.html",
         proxies=data.get("proxies", []),
         total_online=data.get("total_online", 0),
         total_traffic_in=data.get("total_traffic_in", 0),
-        total_traffic_out=data.get("total_traffic_out", 0)
+        total_traffic_out=data.get("total_traffic_out", 0),
     )
+
 
 @app.route("/")
 def signin():
-    return render_template('sign_in.html')
+    return render_template("sign_in.html")
 
-@app.route('/reset_proxy/<proxy_name>')
+
+@app.route("/reset_proxy/<proxy_name>")
 def reset_proxy(proxy_name):
     # Implement the reset logic here
     flash(f"Proxy '{proxy_name}' has been reset.", "success")
     return index()
 
-@app.route('/stop_proxy/<proxy_name>')
+
+@app.route("/stop_proxy/<proxy_name>")
 def stop_proxy(proxy_name):
     # Implement the stop logic here
     flash(f"Proxy '{proxy_name}' has been stopped.", "danger")
     return index()
 
 
-@app.route('/map')
+@app.route("/map")
 def getmap():
     locations = [
         {"name": "Oslo", "lat": 59.9139, "lng": 10.7522},
@@ -97,7 +122,9 @@ def getmap():
         {"name": "Stavanger", "lat": 58.9690, "lng": 5.7331},
         {"name": "Tromsø", "lat": 69.6492, "lng": 18.9553},
     ]
-    return render_template('map.html', locations=json.dumps(locations))
+    return render_template("map.html", locations=json.dumps(locations))
+
 
 if __name__ == "__main__":
     app.run(debug=True)
+
