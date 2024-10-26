@@ -35,6 +35,7 @@ def fetch_connections():
         return {
             "proxies": [],
             "total_online": 0,
+            "total_offline": 0,
             "total_traffic_in": 0,
             "total_traffic_out": 0,
         }
@@ -54,12 +55,14 @@ def fetch_connections():
 
     # Compute summary statistics
     total_online = sum(1 for proxy in proxies if proxy.get("status") == "online")
+    total_offline = sum(1 for proxy in proxies if proxy.get("status") == "offline")
     total_traffic_in = sum(proxy.get("todayTrafficIn", 0) for proxy in proxies)
     total_traffic_out = sum(proxy.get("todayTrafficOut", 0) for proxy in proxies)
 
     return {
         "proxies": proxies,
         "total_online": total_online,
+        "total_offline": total_offline,
         "total_traffic_in": total_traffic_in,
         "total_traffic_out": total_traffic_out,
     }
@@ -84,12 +87,20 @@ def index():
     if not data.get("proxies"):
         flash("No proxies found.", "warning")
 
+    locations = [
+        {"name": "Oslo", "lat": 59.9139, "lng": 10.7522},
+        {"name": "Bergen", "lat": 60.3913, "lng": 5.3221},
+        {"name": "Trondheim", "lat": 63.4305, "lng": 10.3951},
+        {"name": "Stavanger", "lat": 58.9690, "lng": 5.7331},
+        {"name": "Tromsø", "lat": 69.6492, "lng": 18.9553},
+        ]
     return render_template(
         "index.html",
         proxies=data.get("proxies", []),
         total_online=data.get("total_online", 0),
+        total_offline=data.get("total_offline", 0),
         total_traffic_in=data.get("total_traffic_in", 0),
-        total_traffic_out=data.get("total_traffic_out", 0),
+        total_traffic_out=data.get("total_traffic_out", 0),locations=json.dumps(locations)
     )
 
 
