@@ -139,4 +139,5 @@ def getmap():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, ssl_context=("/etc/letsencrypt/live/www.codexenmo.online/fullchain.pem", "/etc/letsencrypt/live/www.codexenmo.online/privkey.pem"))
+
