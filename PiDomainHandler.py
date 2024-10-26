@@ -9,7 +9,7 @@ class PiDomainHandler:
     A client for interacting with the Domeneshop API to manage domains and DNS records.
     """
     
-    def __init__(self, token, secret, domain_name="codexenmo.online", record_type="A", base_url="https://api.domeneshop.no/v0"):
+    def __init__(self, token, secret, domain_name="*codexenmo.online", record_type="A", base_url="https://api.domeneshop.no/v0"):
         """
         Initialize the PiDomainHandler.
 
@@ -114,7 +114,7 @@ class PiDomainHandler:
             "data": data
         }
         response = requests.post(url, headers=self.headers, json=payload)
-        self._print_debug_info(response)
+        
         
         if response.status_code == 201:
             print(f"DNS record added: {host}.{self.domain_name}")
@@ -143,7 +143,6 @@ class PiDomainHandler:
             "data": data
         }
         response = requests.put(url, headers=self.headers, json=payload)
-        self._print_debug_info(response)
         
         if response.status_code == 200:
             print(f"DNS record updated: {host}.{self.domain_name}")
@@ -161,7 +160,6 @@ class PiDomainHandler:
         """
         url = f"{self.base_url}/domains/{domain_id}/dns/{record_id}"
         response = requests.delete(url, headers=self.headers)
-        self._print_debug_info(response)
         
         if response.status_code == 204:
             print(f"DNS record with ID {record_id} deleted.")
@@ -227,14 +225,3 @@ class PiDomainHandler:
             domain_list.append(domain_info)
         
         return domain_list
-    
-def main():
-    # Load API credentials from environment variables
-    load_dotenv("config/.env")
-    token = os.getenv("TOKEN")
-    secret = os.getenv("SECRET")
-    client = PiDomainHandler(token, secret)
-    client.get_domain_list()
-        
-if __name__ == "__main__":
-    main()
