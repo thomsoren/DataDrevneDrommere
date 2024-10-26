@@ -317,6 +317,37 @@
         button.toggle-arrow[aria-expanded="true"] .rotate {
             transform: rotate(180deg);
         }
+
+        /* Dashboard Styles */
+        .dashboard {
+            margin-bottom: 2rem;
+        }
+
+        .dashboard-card {
+            border: none;
+            border-radius: 12px;
+            background: var(--card-background);
+            backdrop-filter: blur(12px);
+            box-shadow: var(--card-shadow);
+            color: var(--primary-color);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .dashboard-card .card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .dashboard-card .card-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .dashboard-card .card-label {
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
     </style>
 </head>
 <body>
@@ -331,6 +362,7 @@
     <div class="container">
         <h1 class="mb-4">Connected Raspberry Pi Proxies</h1>
         
+        <!-- Display Flashed Messages -->
         {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
             {% for category, message in messages %}
@@ -341,7 +373,44 @@
             {% endfor %}
           {% endif %}
         {% endwith %}
-        
+
+        <!-- Overview Dashboard -->
+        <div class="dashboard">
+            <div class="row g-4">
+                <!-- Total RPI Online -->
+                <div class="col-md-4">
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="card-value">{{ total_online }}</div>
+                        <div class="card-label">RPI Online</div>
+                    </div>
+                </div>
+                <!-- Total Traffic In -->
+                <div class="col-md-4">
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="bi bi-arrow-down-circle-fill"></i>
+                        </div>
+                        <div class="card-value">{{ total_traffic_in }}</div>
+                        <div class="card-label">Total Traffic In</div>
+                    </div>
+                </div>
+                <!-- Total Traffic Out -->
+                <div class="col-md-4">
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="bi bi-arrow-up-circle-fill"></i>
+                        </div>
+                        <div class="card-value">{{ total_traffic_out }}</div>
+                        <div class="card-label">Total Traffic Out</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iterate Over Proxies -->
         {% for proxy in proxies %}
             <div class="card">
                 <div class="card-header">
@@ -353,6 +422,9 @@
                         <div>
                             <h2 class="card-title">{{ proxy.name }}</h2>
                             <span class="proxy-id">Status: {{ proxy.status }}</span>
+                            <!-- Display User and Location -->
+                            <span class="d-block">User: {{ proxy.user }}</span>
+                            <span class="d-block">Location: {{ proxy.location }}</span>
                         </div>
                     </div>
                     <div>

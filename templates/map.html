@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimalistic Dark Norway Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        .dark-marker {
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            border: 2px solid #555;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidGhvbXNvcmVuIiwiYSI6ImNtMnFoZTFybTE0dncycnNiejk5a3BucDMifQ.w4T4SUelK5cvtD29BuweYQ';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            center: [11.0, 64.0],
+            zoom: 5,
+            interactive: false
+        });
+
+        map.on('load', function() {
+            const layersToHide = [
+                'country-label', 'state-label', 'place-label', 'road-label', 'water-label', 'poi-label',
+                'building-label', 'settlement-label', 'airport-label', 'road-primary', 'road-secondary',
+                'road-tertiary', 'road-minor', 'road-pedestrian', 'road-cycleway', 'road-trunk', 'road-rail',
+                'poi', 'poi-scalerank3', 'transit-line', 'transit-label', 'bridge', 'tunnel', 'waterway-label'
+            ];
+
+            layersToHide.forEach(function(layerId) {
+                if (map.getLayer(layerId)) {
+                    map.setLayoutProperty(layerId, 'visibility', 'none');
+                }
+            });
+
+            var norwayBounds = [[4.0, 57.0], [31.0, 71.0]];
+            map.fitBounds(norwayBounds, { padding: 20 });
+
+            const locations = JSON.parse('{{ locations | safe }}');
+            locations.forEach(location => {
+                const el = document.createElement('div');
+                el.className = 'dark-marker';
+
+                new mapboxgl.Marker(el)
+                    .setLngLat([location.lng, location.lat])
+                    .setPopup(new mapboxgl.Popup().setText(location.name))
+                    .addTo(map);
+            });
+        });
+    </script>
+</body>
+</html>

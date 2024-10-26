@@ -1,10 +1,11 @@
 import os
-from flask import Flask, json, render_template, flash
+from flask import Flask, json, jsonify, render_template, flash
 from requests import get, exceptions
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Replace with a secure key
 
-# Load UUID-to-user mappings
+# Load UUID-to-user mappings once at startup
 def load_uuid_mapping():
     try:
         data_file_path = os.path.join(os.path.dirname(__file__), 'data', 'uuid_user_mapping.json')
@@ -14,37 +15,61 @@ def load_uuid_mapping():
         flash("Mapping file could not be loaded or found.", "danger")
         return {}
 
+uuid_mapping = load_uuid_mapping()
+
 def fetch_connections():
-    response = get("http://www.codexenmo.online:3000/api/proxy/http")
-    response.raise_for_status() 
-    data = response.json()
-    
-    # Load the mapping once
-    uuid_mapping = load_uuid_mapping()
-    
+    try:
+        response = get("http://www.codexenmo.online:3000/api/proxy/http")
+        response.raise_for_status()
+        data = response.json()
+    except exceptions.RequestException as e:
+        flash(f"Error fetching proxy data: {e}", "danger")
+        return {"proxies": [], "total_online": 0, "total_traffic_in": 0, "total_traffic_out": 0}
+
     # Apply mappings
     for proxy in data.get("proxies", []):
-        uuid = proxy.get("UUID")
+        uuid = proxy.get("name")  # Use 'name' as the UUID key
         if uuid in uuid_mapping:
-            # Add user-friendly name and location, or modify as needed
             proxy["user"] = uuid_mapping[uuid].get("user", "Unknown User")
             proxy["location"] = uuid_mapping[uuid].get("location", "Unknown Location")
-    
-    return data
+        else:
+            proxy["user"] = "Unknown User"
+            proxy["location"] = "Unknown Location"
+
+    # Compute summary statistics
+    total_online = sum(1 for proxy in data.get("proxies", []) if proxy.get("status") == "online")
+    total_traffic_in = sum(proxy.get("todayTrafficIn", 0) for proxy in data.get("proxies", []))
+    total_traffic_out = sum(proxy.get("todayTrafficOut", 0) for proxy in data.get("proxies", []))
+
+    return {
+        "proxies": data.get("proxies", []),
+        "total_online": total_online,
+        "total_traffic_in": total_traffic_in,
+        "total_traffic_out": total_traffic_out
+    }
+
+@app.route("/data")
+def getData():
+    data = fetch_connections()
+    if data is None:
+        return jsonify({"error": "Failed to fetch data."}), 500  # 500 Internal Server Error
+
+    return jsonify({"proxies": data.get("proxies", [])}), 200  # 200 OK
 
 @app.route("/index")
 def index():
-    try:
-        data = fetch_connections()
-    except exceptions.RequestException as e:
-        flash(f"An error occurred while fetching proxy data: {e}", "danger")
-        data = {"proxies": []}
+    data = fetch_connections()
     
     if not data.get("proxies"):
         flash("No proxies found.", "warning")
     
-    return render_template('index.html', proxies=data.get("proxies", []))
-
+    return render_template(
+        'index.html',
+        proxies=data.get("proxies", []),
+        total_online=data.get("total_online", 0),
+        total_traffic_in=data.get("total_traffic_in", 0),
+        total_traffic_out=data.get("total_traffic_out", 0)
+    )
 
 @app.route("/")
 def signin():
@@ -61,6 +86,18 @@ def stop_proxy(proxy_name):
     # Implement the stop logic here
     flash(f"Proxy '{proxy_name}' has been stopped.", "danger")
     return index()
+
+
+@app.route('/map')
+def getmap():
+    locations = [
+        {"name": "Oslo", "lat": 59.9139, "lng": 10.7522},
+        {"name": "Bergen", "lat": 60.3913, "lng": 5.3221},
+        {"name": "Trondheim", "lat": 63.4305, "lng": 10.3951},
+        {"name": "Stavanger", "lat": 58.9690, "lng": 5.7331},
+        {"name": "Tromsø", "lat": 69.6492, "lng": 18.9553},
+    ]
+    return render_template('map.html', locations=json.dumps(locations))
 
 if __name__ == "__main__":
     app.run(debug=True)
