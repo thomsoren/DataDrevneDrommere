@@ -13,7 +13,7 @@
             --secondary-color: #b0b0b0;
             --accent-color: #4299E1;
             --background-color: #121212;
-            --card-background: rgba(30, 30, 30, 0.85);
+            --card-background: rgba(30, 30, 30, 0.50);
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.7), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
             --table-header-bg: #1f1f1f;
             --table-row-odd: #2c2c2c;
@@ -122,11 +122,10 @@
         .dashboard-card {
             text-align: center;
             padding: 1.5rem;
-            margin-bottom: 1rem;
-            height: 30%;
-            max-width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0.5rem;
+            min-width: 180px;
+            width: calc(50% - 1rem);
+            margin-right: 20px;
         }
 
         .dashboard-card .card-icon {
@@ -142,6 +141,13 @@
         .dashboard-card .card-label {
             font-size: 1rem;
             color: var(--secondary-color);
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            height: 100%;
         }
 
         #map {
@@ -190,10 +196,18 @@
             color: #ffffff;
         }
 
-        .map-widget {
-            max-width: 600px;
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .spacing-below {
+            margin-bottom: 2rem;
+        }
+
+        .map-widget,
+        .dashboard-grid {
             margin: 0 auto;
-            height: 100%;
         }
 
         .spacing-below {
@@ -223,38 +237,8 @@
         {% endwith %}
 
         <div class="row align-items-stretch spacing-below">
-            <div class="col-md-3 d-flex flex-column">
-                <div class="card dashboard-card flex-fill">
-                    <div class="card-icon">
-                        <i class="bi bi-people-fill"></i>
-                    </div>
-                    <div class="card-value">{{ total_online }}</div>
-                    <div class="card-label">RPI Online</div>
-                </div>
-                <div class="card dashboard-card flex-fill">
-                    <div class="card-icon">
-                        <i class="bi bi-x-circle-fill"></i>
-                    </div>
-                    <div class="card-value">{{ total_offline }}</div>
-                    <div class="card-label">RPI Offline</div>
-                </div>
-                <div class="card dashboard-card flex-fill">
-                    <div class="card-icon">
-                        <i class="bi bi-arrow-down-circle-fill"></i>
-                    </div>
-                    <div class="card-value">{{ total_traffic_in }}</div>
-                    <div class="card-label">Total Traffic In</div>
-                </div>
-                <div class="card dashboard-card flex-fill">
-                    <div class="card-icon">
-                        <i class="bi bi-arrow-up-circle-fill"></i>
-                    </div>
-                    <div class="card-value">{{ total_traffic_out }}</div>
-                    <div class="card-label">Total Traffic Out</div>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="card mb-4 map-widget h-100">
+            <div class="col-md-7">
+                <div class="card map-widget h-100">
                     <div class="card-header">
                         <h2 class="card-title">
                             <i class="bi bi-geo-alt-fill me-2"></i>
@@ -262,6 +246,38 @@
                         </h2>
                     </div>
                     <div id="map"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dashboard-grid">
+                    <div class="card dashboard-card">
+                        <div class="card-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="card-value">{{ total_online }}</div>
+                        <div class="card-label">RPI Online</div>
+                    </div>
+                    <div class="card dashboard-card">
+                        <div class="card-icon">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+                        <div class="card-value">{{ total_offline }}</div>
+                        <div class="card-label">RPI Offline</div>
+                    </div>
+                    <div class="card dashboard-card">
+                        <div class="card-icon">
+                            <i class="bi bi-arrow-down-circle-fill"></i>
+                        </div>
+                        <div class="card-value">{{ total_traffic_in }}</div>
+                        <div class="card-label">Total Traffic In</div>
+                    </div>
+                    <div class="card dashboard-card">
+                        <div class="card-icon">
+                            <i class="bi bi-arrow-up-circle-fill"></i>
+                        </div>
+                        <div class="card-value">{{ total_traffic_out }}</div>
+                        <div class="card-label">Total Traffic Out</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,7 +293,6 @@
                         <div>
                             <h2 class="card-title">{{ proxy.user }}</h2>
                             <span class="proxy-id">Status: {{ proxy.status }}</span>
-                            <!-- Display Location -->
                             <span class="d-block">Location: {{ proxy.location }}</span>
                         </div>
                     </div>
