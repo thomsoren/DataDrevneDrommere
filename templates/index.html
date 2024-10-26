@@ -420,10 +420,9 @@
                             <i class="bi bi-caret-down-fill rotate"></i>
                         </button>
                         <div>
-                            <h2 class="card-title">{{ proxy.name }}</h2>
+                            <h2 class="card-title">{{ proxy.user }}</h2>
                             <span class="proxy-id">Status: {{ proxy.status }}</span>
-                            <!-- Display User and Location -->
-                            <span class="d-block">User: {{ proxy.user }}</span>
+                            <!-- Display Location -->
                             <span class="d-block">Location: {{ proxy.location }}</span>
                         </div>
                     </div>
@@ -448,24 +447,24 @@
                             <table class="table proxy-table">
                                 <tbody>
                                     <tr>
-                                        <td><strong>Subdomain:</strong></td>
-                                        <td><a href="/raspberry">{{ proxy.conf.subdomain }}</a></td>
+                                        <td><strong>UUID:</strong></td>
+                                        <td><a href="http://{{ proxy.name }}.codexenmo.online">{{ proxy.conf.subdomain }}</a></td>
                                     </tr>
                                     <tr>
                                         <td><strong>Today Traffic In:</strong></td>
-                                        <td><a href="/raspberry">{{ proxy.todayTrafficIn }}</a></td>
+                                        <td><a href="http://{{ proxy.name }}.codexenmo.online">{{ proxy.todayTrafficIn }}</a></td>
                                     </tr>
                                     <tr>
                                         <td><strong>Today Traffic Out:</strong></td>
-                                        <td><a href="/raspberry">{{ proxy.todayTrafficOut }}</a></td>
+                                        <td><a href="http://{{ proxy.name }}.codexenmo.online">{{ proxy.todayTrafficOut }}</a></td>
                                     </tr>
                                     <tr>
                                         <td><strong>Last Start Time:</strong></td>
-                                        <td><a href="/raspberry">{{ proxy.lastStartTime }}</a></td>
+                                        <td><a href="http://{{ proxy.name }}.codexenmo.online">{{ proxy.lastStartTime }}</a></td>
                                     </tr>
                                     <tr>
                                         <td><strong>Last Close Time:</strong></td>
-                                        <td><a href="/raspberry">{{ proxy.lastCloseTime }}</a></td>
+                                        <td><a href="http://{{ proxy.name }}.codexenmo.online">{{ proxy.lastCloseTime }}</a></td>
                                     </tr>
                                 </tbody>
                             </table>
