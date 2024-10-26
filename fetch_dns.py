@@ -1,12 +1,36 @@
-from flask import Flask, render_template, flash
+import os
+from flask import Flask, json, render_template, flash
 from requests import get, exceptions
 
 app = Flask(__name__)
 
+# Load UUID-to-user mappings
+def load_uuid_mapping():
+    try:
+        data_file_path = os.path.join(os.path.dirname(__file__), 'data', 'uuid_user_mapping.json')
+        with open(data_file_path) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        flash("Mapping file could not be loaded or found.", "danger")
+        return {}
+
 def fetch_connections():
     response = get("http://www.codexenmo.online:3000/api/proxy/http")
     response.raise_for_status() 
-    return response.json()
+    data = response.json()
+    
+    # Load the mapping once
+    uuid_mapping = load_uuid_mapping()
+    
+    # Apply mappings
+    for proxy in data.get("proxies", []):
+        uuid = proxy.get("UUID")
+        if uuid in uuid_mapping:
+            # Add user-friendly name and location, or modify as needed
+            proxy["user"] = uuid_mapping[uuid].get("user", "Unknown User")
+            proxy["location"] = uuid_mapping[uuid].get("location", "Unknown Location")
+    
+    return data
 
 @app.route("/index")
 def index():
