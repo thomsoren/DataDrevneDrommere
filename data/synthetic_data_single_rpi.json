@@ -1,0 +1,386 @@
+[
+    {
+        "timestamp": "2024-10-25T19:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 3.19,
+        "powerPrice": 0.36,
+        "batteryCharge_kWh": 1.81,
+        "batteryAction": "Discharging 3.19 kWh"
+    },
+    {
+        "timestamp": "2024-10-25T20:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.98,
+        "powerPrice": 0.15,
+        "batteryCharge_kWh": 2.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-25T21:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.63,
+        "powerPrice": 0.16,
+        "batteryCharge_kWh": 3.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-25T22:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 1.82,
+        "powerPrice": 0.11,
+        "batteryCharge_kWh": 4.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-25T23:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.37,
+        "powerPrice": 0.11,
+        "batteryCharge_kWh": 5.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T00:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 3.17,
+        "powerPrice": 0.18,
+        "batteryCharge_kWh": 6.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T01:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.64,
+        "powerPrice": 0.17,
+        "batteryCharge_kWh": 7.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T02:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.21,
+        "powerPrice": 0.11,
+        "batteryCharge_kWh": 8.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T03:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.33,
+        "powerPrice": 0.12,
+        "batteryCharge_kWh": 9.81,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T04:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 3.05,
+        "powerPrice": 0.11,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T05:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 1.74,
+        "powerPrice": 0.18,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T06:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.02,
+        "powerPrice": 0.11,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T07:45:17.452849Z",
+        "solarEnergy_kW": 1.29,
+        "consumption_kW": 3.12,
+        "powerPrice": 0.18,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T08:45:17.452849Z",
+        "solarEnergy_kW": 2.5,
+        "consumption_kW": 1.89,
+        "powerPrice": 0.28,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T09:45:17.452849Z",
+        "solarEnergy_kW": 3.54,
+        "consumption_kW": 2.58,
+        "powerPrice": 0.41,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T10:45:17.452849Z",
+        "solarEnergy_kW": 4.33,
+        "consumption_kW": 1.66,
+        "powerPrice": 0.36,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T11:45:17.452849Z",
+        "solarEnergy_kW": 4.83,
+        "consumption_kW": 2.01,
+        "powerPrice": 0.32,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T12:45:17.452849Z",
+        "solarEnergy_kW": 5.0,
+        "consumption_kW": 2.81,
+        "powerPrice": 0.36,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T13:45:17.452849Z",
+        "solarEnergy_kW": 4.83,
+        "consumption_kW": 2.37,
+        "powerPrice": 0.27,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T14:45:17.452849Z",
+        "solarEnergy_kW": 4.33,
+        "consumption_kW": 2.49,
+        "powerPrice": 0.41,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T15:45:17.452849Z",
+        "solarEnergy_kW": 3.54,
+        "consumption_kW": 1.89,
+        "powerPrice": 0.32,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T16:45:17.452849Z",
+        "solarEnergy_kW": 2.5,
+        "consumption_kW": 1.84,
+        "powerPrice": 0.37,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-26T17:45:17.452849Z",
+        "solarEnergy_kW": 1.29,
+        "consumption_kW": 3.2,
+        "powerPrice": 0.33,
+        "batteryCharge_kWh": 6.8,
+        "batteryAction": "Discharging 3.2 kWh"
+    },
+    {
+        "timestamp": "2024-10-26T18:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.2,
+        "powerPrice": 0.3,
+        "batteryCharge_kWh": 4.6,
+        "batteryAction": "Discharging 2.2 kWh"
+    },
+    {
+        "timestamp": "2024-10-26T19:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.35,
+        "powerPrice": 0.31,
+        "batteryCharge_kWh": 2.25,
+        "batteryAction": "Discharging 2.35 kWh"
+    },
+    {
+        "timestamp": "2024-10-26T20:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 3.33,
+        "powerPrice": 0.17,
+        "batteryCharge_kWh": 3.25,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T21:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.99,
+        "powerPrice": 0.15,
+        "batteryCharge_kWh": 4.25,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T22:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 1.78,
+        "powerPrice": 0.14,
+        "batteryCharge_kWh": 5.25,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-26T23:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 1.62,
+        "powerPrice": 0.13,
+        "batteryCharge_kWh": 6.25,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-27T00:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 3.33,
+        "powerPrice": 0.17,
+        "batteryCharge_kWh": 7.25,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-27T01:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.13,
+        "powerPrice": 0.2,
+        "batteryCharge_kWh": 5.12,
+        "batteryAction": "Discharging 2.13 kWh"
+    },
+    {
+        "timestamp": "2024-10-27T02:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.15,
+        "powerPrice": 0.17,
+        "batteryCharge_kWh": 6.12,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-27T03:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.72,
+        "powerPrice": 0.15,
+        "batteryCharge_kWh": 7.12,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-27T04:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.35,
+        "powerPrice": 0.14,
+        "batteryCharge_kWh": 8.12,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-27T05:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.64,
+        "powerPrice": 0.18,
+        "batteryCharge_kWh": 9.12,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-27T06:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 2.38,
+        "powerPrice": 0.2,
+        "batteryCharge_kWh": 6.74,
+        "batteryAction": "Discharging 2.38 kWh"
+    },
+    {
+        "timestamp": "2024-10-27T07:45:17.452849Z",
+        "solarEnergy_kW": 1.29,
+        "consumption_kW": 3.07,
+        "powerPrice": 0.11,
+        "batteryCharge_kWh": 7.74,
+        "batteryAction": "Charging from Grid (Low Price)"
+    },
+    {
+        "timestamp": "2024-10-27T08:45:17.452849Z",
+        "solarEnergy_kW": 2.5,
+        "consumption_kW": 3.17,
+        "powerPrice": 0.36,
+        "batteryCharge_kWh": 4.57,
+        "batteryAction": "Discharging 3.17 kWh"
+    },
+    {
+        "timestamp": "2024-10-27T09:45:17.452849Z",
+        "solarEnergy_kW": 3.54,
+        "consumption_kW": 2.98,
+        "powerPrice": 0.37,
+        "batteryCharge_kWh": 5.13,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T10:45:17.452849Z",
+        "solarEnergy_kW": 4.33,
+        "consumption_kW": 2.2,
+        "powerPrice": 0.34,
+        "batteryCharge_kWh": 7.26,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T11:45:17.452849Z",
+        "solarEnergy_kW": 4.83,
+        "consumption_kW": 2.78,
+        "powerPrice": 0.25,
+        "batteryCharge_kWh": 9.31,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T12:45:17.452849Z",
+        "solarEnergy_kW": 5.0,
+        "consumption_kW": 2.16,
+        "powerPrice": 0.31,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T13:45:17.452849Z",
+        "solarEnergy_kW": 4.83,
+        "consumption_kW": 2.45,
+        "powerPrice": 0.37,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T14:45:17.452849Z",
+        "solarEnergy_kW": 4.33,
+        "consumption_kW": 3.48,
+        "powerPrice": 0.39,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T15:45:17.452849Z",
+        "solarEnergy_kW": 3.54,
+        "consumption_kW": 1.96,
+        "powerPrice": 0.33,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T16:45:17.452849Z",
+        "solarEnergy_kW": 2.5,
+        "consumption_kW": 1.93,
+        "powerPrice": 0.31,
+        "batteryCharge_kWh": 10,
+        "batteryAction": "Charging from Solar"
+    },
+    {
+        "timestamp": "2024-10-27T17:45:17.452849Z",
+        "solarEnergy_kW": 1.29,
+        "consumption_kW": 3.04,
+        "powerPrice": 0.32,
+        "batteryCharge_kWh": 6.96,
+        "batteryAction": "Discharging 3.04 kWh"
+    },
+    {
+        "timestamp": "2024-10-27T18:45:17.452849Z",
+        "solarEnergy_kW": 0,
+        "consumption_kW": 3.3,
+        "powerPrice": 0.41,
+        "batteryCharge_kWh": 3.66,
+        "batteryAction": "Discharging 3.3 kWh"
+    }
+]

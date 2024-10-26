@@ -1,14 +1,20 @@
-// scripts.js
+// static/js/scripts.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/api/data')
-        .then(response => response.json())
-        .then(data => {
-            initializeMap(data);
-            initializeCharts(data);
-            populateTable(data);
-        })
-        .catch(error => console.error('Error fetching data:', error));
+    // Hent den nåværende URL-en for å avgjøre hvilken side som er lastet
+    const path = window.location.pathname;
+    
+    if (path === '/raspberry') {
+        fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+                initializeMap(data);
+                initializeCharts(data);
+                populateTable(data);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+    // Hvis du har annen funksjonalitet for andre sider, kan du legge til her
 });
 
 // Initialiser Leaflet-kart
@@ -46,11 +52,22 @@ function initializeCharts(data) {
             datasets: [{
                 label: 'Batteristørrelse (kWh)',
                 data: batterySizes,
-                backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
             }]
         },
         options: {
             responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Batteristørrelse per Raspberry Pi'
+                },
+                legend: {
+                    display: false
+                }
+            },
             scales: {
                 x: { 
                     title: {
@@ -80,11 +97,22 @@ function initializeCharts(data) {
             datasets: [{
                 label: 'Solpanel Størrelse (kW)',
                 data: solarSizes,
-                backgroundColor: 'rgba(255, 206, 86, 0.6)'
+                backgroundColor: 'rgba(255, 206, 86, 0.6)',
+                borderColor: 'rgba(255, 206, 86, 1)',
+                borderWidth: 1
             }]
         },
         options: {
             responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Solpanel Størrelse per Raspberry Pi'
+                },
+                legend: {
+                    display: false
+                }
+            },
             scales: {
                 x: { 
                     title: {
