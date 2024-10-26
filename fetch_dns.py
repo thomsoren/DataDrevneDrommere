@@ -37,8 +37,11 @@ def fetch_connections():
             "total_traffic_out": 0,
         }
 
+    # Filter out www
+    proxies = list(filter(lambda p: p["name"] != "www", data.get("proxies", [])))
+
     # Apply mappings
-    for proxy in data.get("proxies", []):
+    for proxy in proxies:
         uuid = proxy.get("name")  # Use 'name' as the UUID key
         if uuid in uuid_mapping:
             proxy["user"] = uuid_mapping[uuid].get("user", "Unknown User")
@@ -48,18 +51,12 @@ def fetch_connections():
             proxy["location"] = "Unknown Location"
 
     # Compute summary statistics
-    total_online = sum(
-        1 for proxy in data.get("proxies", []) if proxy.get("status") == "online"
-    )
-    total_traffic_in = sum(
-        proxy.get("todayTrafficIn", 0) for proxy in data.get("proxies", [])
-    )
-    total_traffic_out = sum(
-        proxy.get("todayTrafficOut", 0) for proxy in data.get("proxies", [])
-    )
+    total_online = sum(1 for proxy in proxies if proxy.get("status") == "online")
+    total_traffic_in = sum(proxy.get("todayTrafficIn", 0) for proxy in proxies)
+    total_traffic_out = sum(proxy.get("todayTrafficOut", 0) for proxy in proxies)
 
     return {
-        "proxies": data.get("proxies", []),
+        "proxies": proxies,
         "total_online": total_online,
         "total_traffic_in": total_traffic_in,
         "total_traffic_out": total_traffic_out,
@@ -127,4 +124,3 @@ def getmap():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
